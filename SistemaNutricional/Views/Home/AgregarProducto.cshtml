@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Administración de Productos</title>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h2>Administración de Productos</h2>
+
+        <form id="productoForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea class="form-control" id="descripcion" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="number" class="form-control" id="precio" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" class="form-control" id="cantidad" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="crearProducto()">Crear Producto</button>
+            <button type="button" class="btn btn-warning" onclick="modificarProducto()">Modificar Producto</button>
+        </form>
+
+        <h3>Listado de Productos</h3>
+        <ul id="listaProductos" class="list-group">
+        </ul>
+    </div>
+    <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1">
+            <li>@Html.ActionLink("ProductosReservados", "ProductosReservados", "Home", new { area = "" }, new { @class = "btn btn-success" })</li>
+
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        var productos = []; 
+
+        function crearProducto() {
+           
+            var nombre = document.getElementById('nombre').value;
+            var descripcion = document.getElementById('descripcion').value;
+            var precio = parseFloat(document.getElementById('precio').value);
+            var cantidad = parseInt(document.getElementById('cantidad').value);
+
+            
+            if (nombre && descripcion && !isNaN(precio) && !isNaN(cantidad)) {
+               
+                var producto = {
+                    nombre: nombre,
+                    descripcion: descripcion,
+                    precio: precio,
+                    cantidad: cantidad
+                };
+
+                
+                productos.push(producto);
+
+               
+                actualizarListaProductos();
+
+               
+                document.getElementById('productoForm').reset();
+            } else {
+                alert('Por favor, complete todos los campos correctamente.');
+            }
+        }
+
+        function modificarProducto() {
+            
+            var indice = obtenerIndiceProductoSeleccionado();
+
+            
+            if (indice !== -1) {
+              
+                productos[indice].nombre = document.getElementById('nombre').value;
+                productos[indice].descripcion = document.getElementById('descripcion').value;
+                productos[indice].precio = parseFloat(document.getElementById('precio').value);
+                productos[indice].cantidad = parseInt(document.getElementById('cantidad').value);
+
+              
+                actualizarListaProductos();
+
+           
+                document.getElementById('productoForm').reset();
+            } else {
+                alert('Seleccione un producto de la lista para modificar.');
+            }
+        }
+
+        function eliminarProducto() {
+         
+            var indice = obtenerIndiceProductoSeleccionado();
+
+            if (indice !== -1) {
+                productos.splice(indice, 1);
+
+                actualizarListaProductos();
+
+                document.getElementById('productoForm').reset();
+            } else {
+                alert('Seleccione un producto de la lista para eliminar.');
+            }
+        }
+
+        function seleccionarProducto(indice) {
+            var producto = productos[indice];
+
+            document.getElementById('nombre').value = producto.nombre;
+            document.getElementById('descripcion').value = producto.descripcion;
+            document.getElementById('precio').value = producto.precio;
+            document.getElementById('cantidad').value = producto.cantidad;
+        }
+
+        function obtenerIndiceProductoSeleccionado() {
+            var listaProductos = document.getElementById('listaProductos');
+            var elementos = listaProductos.getElementsByClassName('list-group-item');
+
+            for (var i = 0; i < elementos.length; i++) {
+                if (elementos[i].classList.contains('active')) {
+                    return i;
+                }
+            }
+
+            return -1; 
+        }
+
+        function actualizarListaProductos() {
+            var listaProductos = document.getElementById('listaProductos');
+
+            listaProductos.innerHTML = '';
+
+            for (var i = 0; i < productos.length; i++) {
+                var producto = productos[i];
+
+                var listItem = document.createElement('li');
+                listItem.className = 'list-group-item';
+                listItem.innerHTML = `<strong>${producto.nombre}</strong> - ${producto.descripcion} - Precio: $${producto.precio} - Cantidad: ${producto.cantidad}`;
+                listItem.addEventListener('click', function () {
+                    seleccionarProducto(i);
+                    listItem.classList.add('active');
+                    for (var j = 0; j < elementos.length; j++) {
+                        if (elementos[j] !== listItem) {
+                            elementos[j].classList.remove('active');
+                        }
+                    }
+                });
+
+                var botones = document.createElement('div');
+                botones.className = 'float-right';
+                botones.innerHTML = `<button type="button" class="btn btn-warning btn-sm" onclick="seleccionarProducto(${i})">Modificar</button>
+                                                <button type="button" class="btn btn-danger btn-sm" onclick="eliminarProducto()">Eliminar</button>`;
+                listItem.appendChild(botones);
+
+                listaProductos.appendChild(listItem);
+            }
+        }
+    </script>
+</body>
+</html>
+s

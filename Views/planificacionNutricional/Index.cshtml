@@ -1,0 +1,93 @@
+﻿@model IEnumerable<SistemaNutricional.Models.planificacionNutricional>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.datosAntropometrico.datosAnaliticos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.porcentajedemasagrasa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.metabolismobasal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.actividadfisica)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.caloriasdiarias)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.proteinas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.carbohidratos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.grasas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.objetivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.peso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.altura)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.datosAntropometrico.datosAnaliticos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.porcentajedemasagrasa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.metabolismobasal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.actividadfisica)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.caloriasdiarias)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.proteinas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.carbohidratos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.grasas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.objetivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.peso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.altura)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idPlanificacionNutricional }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idPlanificacionNutricional }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idPlanificacionNutricional })
+        </td>
+    </tr>
+}
+
+</table>

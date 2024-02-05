@@ -50,6 +50,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -169,14 +171,27 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\datosAntropometricoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\planAlimentacionController.cs" />
+    <Compile Include="Controllers\planificacionNutricionalController.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
+    <Compile Include="Controllers\RecetaController.cs" />
+    <Compile Include="Controllers\valoresNutricionaleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\datosAntropometrico.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Nutricion.cs" />
+    <Compile Include="Models\planAlimentacion.cs" />
+    <Compile Include="Models\planificacionNutricional.cs" />
+    <Compile Include="Models\Producto.cs" />
+    <Compile Include="Models\Receta.cs" />
+    <Compile Include="Models\valoresNutricionale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -262,6 +277,36 @@
     <Content Include="Views\Home\AgregarProducto.cshtml" />
     <Content Include="Views\Home\Tienda.cshtml" />
     <Content Include="Views\Home\ProductosReservados.cshtml" />
+    <Content Include="Views\datosAntropometrico\Create.cshtml" />
+    <Content Include="Views\datosAntropometrico\Delete.cshtml" />
+    <Content Include="Views\datosAntropometrico\Details.cshtml" />
+    <Content Include="Views\datosAntropometrico\Edit.cshtml" />
+    <Content Include="Views\datosAntropometrico\Index.cshtml" />
+    <Content Include="Views\planAlimentacion\Create.cshtml" />
+    <Content Include="Views\planAlimentacion\Delete.cshtml" />
+    <Content Include="Views\planAlimentacion\Details.cshtml" />
+    <Content Include="Views\planAlimentacion\Edit.cshtml" />
+    <Content Include="Views\planAlimentacion\Index.cshtml" />
+    <Content Include="Views\planificacionNutricional\Create.cshtml" />
+    <Content Include="Views\planificacionNutricional\Delete.cshtml" />
+    <Content Include="Views\planificacionNutricional\Details.cshtml" />
+    <Content Include="Views\planificacionNutricional\Edit.cshtml" />
+    <Content Include="Views\planificacionNutricional\Index.cshtml" />
+    <Content Include="Views\Producto\Create.cshtml" />
+    <Content Include="Views\Producto\Delete.cshtml" />
+    <Content Include="Views\Producto\Details.cshtml" />
+    <Content Include="Views\Producto\Edit.cshtml" />
+    <Content Include="Views\Producto\Index.cshtml" />
+    <Content Include="Views\Receta\Create.cshtml" />
+    <Content Include="Views\Receta\Delete.cshtml" />
+    <Content Include="Views\Receta\Details.cshtml" />
+    <Content Include="Views\Receta\Edit.cshtml" />
+    <Content Include="Views\Receta\Index.cshtml" />
+    <Content Include="Views\valoresNutricionale\Create.cshtml" />
+    <Content Include="Views\valoresNutricionale\Delete.cshtml" />
+    <Content Include="Views\valoresNutricionale\Details.cshtml" />
+    <Content Include="Views\valoresNutricionale\Edit.cshtml" />
+    <Content Include="Views\valoresNutricionale\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

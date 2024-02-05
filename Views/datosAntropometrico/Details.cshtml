@@ -1,0 +1,74 @@
+﻿@model SistemaNutricional.Models.datosAntropometrico
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>datosAntropometrico</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.planificacionNutricional.objetivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.planificacionNutricional.objetivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.altura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.altura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IMC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IMC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.grasacorporal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grasacorporal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.datosAnaliticos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datosAnaliticos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.progreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.progreso)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idDatos }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

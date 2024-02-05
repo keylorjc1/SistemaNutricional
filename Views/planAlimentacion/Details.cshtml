@@ -1,0 +1,42 @@
+﻿@model SistemaNutricional.Models.planAlimentacion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>planAlimentacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.comida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.alimentos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.alimentos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.calorias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.calorias)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idPlan }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

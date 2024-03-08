@@ -1,39 +1,39 @@
 ﻿@model WebNutricion.Models.RegisterViewModel
 @{
-    ViewBag.Title = "Registrarse";
+    Layout = null; // Esto elimina el diseño predeterminado
 }
-
 <main aria-labelledby="title">
     <h2 id="title">@ViewBag.Title.</h2>
 
     @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { role = "form" }))
     {
         @Html.AntiForgeryToken()
-        <h4>Cree una cuenta nueva.</h4>
-        <hr />
-        @Html.ValidationSummary("", new { @class = "text-danger" })
-        <div class="row">
-            @Html.LabelFor(m => m.Email, new { @class = "col-md-2 col-form-label" })
-            <div class="col-md-10">
+        <div class="form">
+            <h4>Registrate</h4>
+            <hr />
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+
+            <div class="input-box">
+                @Html.LabelFor(m => m.Email)
                 @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
             </div>
-        </div>
-        <div class="row">
-            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 col-form-label" })
-            <div class="col-md-10">
+
+            <div class="input-box">
+                @Html.LabelFor(m => m.Password)
                 @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
             </div>
-        </div>
-        <div class="row">
-            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 col-form-label" })
-            <div class="col-md-10">
+
+            <div class="input-box">
+                @Html.LabelFor(m => m.ConfirmPassword)
                 @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
             </div>
-        </div>
-        <div class="row">
-            <div class="offset-md-2 col-md-10">
+
+            <div class="input-box">
                 <input type="submit" value="Registrarse" class="btn btn-outline-dark" />
             </div>
+            <p>
+                @Html.ActionLink("Regresar", "Index", "Home")
+            </p>
         </div>
     }
 </main>
@@ -41,3 +41,194 @@
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        font-family: sans-serif;
+        background: linear-gradient(45deg, #43c6ac, #191654);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        float: right;
+    }
+
+        body:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -25%;
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, .3);
+            opacity: 0.7;
+        }
+
+    .form {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 530px;
+        background: #fff;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, .5);
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+        .form h2 {
+            color: #777;
+            margin: 0 0 40px;
+            padding: 0;
+            text-align: center;
+        }
+
+        .form .input-box {
+            position: relative;
+            margin: 20px 0;
+        }
+
+            .form .input-box input {
+                width: 100%;
+                font-size: 16px;
+                border: none;
+                border-bottom: 2px solid #777;
+                outline: none;
+                padding: 10px;
+                padding-left: 25px;
+                box-sizing: border-box;
+                font-weight: bold;
+                color: #777;
+            }
+
+                .form .input-box input:focus,
+                .form .input-box input:valid {
+                    border-bottom: 2px solid #03a9f4;
+                }
+
+            .form .input-box .fa {
+                position: absolute;
+                top: 8px;
+                left: 0;
+                font-size: 18px;
+                color: #777;
+            }
+
+            .form .input-box input[type="submit"] {
+                border: none;
+                cursor: pointer;
+                background: linear-gradient(45deg, #43c6ac, #191654);
+                color: #fff;
+                font-weight: bold;
+                transition: 0.5s;
+            }
+
+                .form .input-box input[type="submit"]:hover {
+                    background: linear-gradient(45deg, #191654, #43c6ac);
+                }
+
+        .form .a {
+            text-decoration: none;
+            color: #777;
+            margin-top: 20px;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.5s;
+        }
+
+            .form .a:hover {
+                color: #BE5869;
+            }
+
+        .form h5 {
+            margin: 0;
+            padding: 15px 0 0 0;
+            text-align: center;
+            color: #777;
+        }
+
+        .form h4 {
+            padding: 50px 0 0 0;
+            text-align: center;
+            color: #777;
+        }
+
+            .form h4 a {
+                text-decoration: none;
+                color: #BE5869;
+            }
+
+    ul {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+        ul li {
+            position: relative;
+            list-style: none;
+            top: 50px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            margin: 0 30px;
+            transform: rotate(-30deg) skew(25deg);
+            background: #ccc;
+        }
+
+            ul li span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #000;
+                transition: 0.5s;
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 30px !important;
+            }
+
+            ul li:hover span {
+                box-shadow: -1px 1px 1px rgba(0, 0, 0, .1);
+            }
+
+                ul li:hover span:nth-child(5) {
+                    transform: translate(40px, -40px);
+                    opacity: 1;
+                }
+
+                ul li:hover span:nth-child(4) {
+                    transform: translate(30px, -30px);
+                    opacity: .8;
+                }
+
+                ul li:hover span:nth-child(3) {
+                    transform: translate(20px, -20px);
+                    opacity: .6;
+                }
+
+                ul li:hover span:nth-child(2) {
+                    transform: translate(10px, -10px);
+                    opacity: .4;
+                }
+
+                ul li:hover span:nth-child(1) {
+                    transform: translate(0, 0);
+                    opacity: .2;
+                }
+
+            ul li:nth-child(1) span {
+                background: #3b5999;
+            }
+
+            ul li:nth-child(2) span {
+                background: #dd4b39;
+            }
+</style>

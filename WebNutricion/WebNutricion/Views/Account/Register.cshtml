@@ -8,33 +8,39 @@
     @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { role = "form" }))
     {
         @Html.AntiForgeryToken()
-        <div class="form">
-            <h4>Registrate</h4>
-            <hr />
-            @Html.ValidationSummary("", new { @class = "text-danger" })
+<div class="form">
+    <h4>Registrate</h4>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
 
-            <div class="input-box">
-                @Html.LabelFor(m => m.Email)
-                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-            </div>
+    <div class="input-box">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+    </div>
 
-            <div class="input-box">
-                @Html.LabelFor(m => m.Password)
-                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-            </div>
+    <div class="input-box">
+        @Html.LabelFor(m => m.Password)
+        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+    </div>
 
-            <div class="input-box">
-                @Html.LabelFor(m => m.ConfirmPassword)
-                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-            </div>
+    <div class="input-box">
+        @Html.LabelFor(m => m.ConfirmPassword)
+        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+    </div>
 
-            <div class="input-box">
-                <input type="submit" value="Registrarse" class="btn btn-outline-dark" />
-            </div>
-            <p>
-                @Html.ActionLink("Regresar", "Index", "Home")
-            </p>
-        </div>
+    <div class="input-box">
+        @Html.LabelFor(m => m.Rol)
+        @Html.DropDownListFor(m => m.Rol, new SelectList(ViewBag.Roles,"Id","Name"),
+       "-- Seleccione un Rol --", new { @class = "form-control" })
+    </div>
+
+    <div class="input-box">
+        <input type="submit" value="Registrarse" class="btn btn-outline-dark" />
+    </div>
+    <p>
+        @Html.ActionLink("Regresar", "Index", "Home")
+    </p>
+</div>
     }
 </main>
 

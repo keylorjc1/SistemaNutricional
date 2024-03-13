@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
@@ -17,14 +18,16 @@ namespace WebNutricion.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+        private ApplicationRoleManager _roleManager;
 
         public AccountController()
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationRoleManager roleManager, ApplicationSignInManager signInManager )
         {
             UserManager = userManager;
+            RoleManager = roleManager;
             SignInManager = signInManager;
         }
 
@@ -49,6 +52,18 @@ namespace WebNutricion.Controllers
             private set
             {
                 _userManager = value;
+            }
+        }
+
+        public ApplicationRoleManager RoleManager
+        {
+            get
+            {
+                return _roleManager ?? HttpContext.GetOwinContext().Get<ApplicationRoleManager>();
+            }
+            private set
+            {
+                _roleManager = value;
             }
         }
 
@@ -139,6 +154,19 @@ namespace WebNutricion.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            List<Role> rolesBD = RoleManager.Roles.ToList();
+
+            if(rolesBD.Count == 0)
+            {
+                Role admin = new Role() { Id = Guid.NewGuid().ToString(), Name = "Admin", Descripcion = "Role de super usuario", Activo = true };
+                Role user = new Role() { Id = Guid.NewGuid().ToString(), Name = "User", Descripcion = "Role de usuario general", Activo = true };
+                RoleManager.Create(admin);
+                RoleManager.Create(user);
+                rolesBD = RoleManager.Roles.ToList();
+            }
+
+            ViewBag.Roles = rolesBD;
+
             return View();
         }
 

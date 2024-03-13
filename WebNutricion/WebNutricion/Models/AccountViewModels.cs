@@ -46,6 +46,7 @@ namespace WebNutricion.Models
         public string Email { get; set; }
     }
 
+
     public class LoginViewModel
     {
         [Required]
@@ -79,6 +80,8 @@ namespace WebNutricion.Models
         [Display(Name = "Confirmar contraseña")]
         [Compare("Password", ErrorMessage = "La contraseña y la contraseña de confirmación no coinciden.")]
         public string ConfirmPassword { get; set; }
+
+        public string Rol { get; set; }
     }
 
     public class ResetPasswordViewModel

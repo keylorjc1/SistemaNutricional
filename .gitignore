@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/WebNutricion/WebNutricion/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/WebNutricion/WebNutricion/obj/Debug/build.force
+/WebNutricion/WebNutricion/obj/Debug/WebNutricion.csproj.AssemblyReference.cache
+/WebNutricion/WebNutricion/obj/Debug
+/WebNutricion/.vs/WebNutricion/FileContentIndex

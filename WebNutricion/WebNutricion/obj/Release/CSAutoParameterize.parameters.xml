@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-WebNutricion-20240308072624.mdf;Initial Catalog=aspnet-WebNutricion-20240308072624;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="Nutricion-Web.config Connection String" description="Nutricion Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="data source=DESKTOP-8GI0STB\SQLEXPRESS;initial catalog=SistemaWebNutricional;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Nutricion']/@connectionString" />
+  </parameter>
+</parameters>

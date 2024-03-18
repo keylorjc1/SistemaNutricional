@@ -26,5 +26,18 @@ namespace WebNutricion.Controllers
 
             return View();
         }
+        public ActionResult AdminAppointments()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult AvailableAppointments()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
     }
 }

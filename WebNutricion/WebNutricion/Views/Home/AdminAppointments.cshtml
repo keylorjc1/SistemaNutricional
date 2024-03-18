@@ -1,0 +1,188 @@
+﻿@model List<WebNutricion.Models.Appointment>
+
+@{
+    ViewBag.Title = "Admin Appointments";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    /* CSS no Boostrap ya que no me esta tomando los estilos de boostrap, pasarlo a otra carpeta pero es de prueba  */
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .calendar-container {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        padding: 20px;
+    }
+
+    .calendar-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+    }
+
+    .calendar-cell {
+        padding: 10px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+
+        .calendar-cell:hover {
+            background-color: #e0e0e0;
+        }
+
+    .selected {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .time-selection {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .time-option {
+        margin: 0 5px;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .time-option:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+</style>
+
+<div class="container mt-5">
+    <h2>Admin Appointments</h2>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <h2>Calendar with Time Selection</h2>
+        </div>
+        <div class="calendar">
+            Days of the week
+            <div class="calendar-cell">Mon</div>
+            <div class="calendar-cell">Tue</div>
+            <div class="calendar-cell">Wed</div>
+            <div class="calendar-cell">Thu</div>
+            <div class="calendar-cell">Fri</div>
+            <div class="calendar-cell">Sat</div>
+            Days of the month
+            @*This part can be generated dynamically using server-side code*@
+            <div class="calendar-cell" data-date="2024-03-15">15</div>
+            <div class="calendar-cell" data-date="2024-03-16">16</div>
+            <div class="calendar-cell" data-date="2024-03-17">17</div>
+            <div class="calendar-cell" data-date="2024-03-18">18</div>
+            <div class="calendar-cell" data-date="2024-03-19">19</div>
+            <div class="calendar-cell" data-date="2024-03-19">20</div>
+        </div>
+        <div class="time-selection">
+            Time options
+            <div class="time-option">10:00 AM</div>
+            <div class="time-option">11:00 AM</div>
+            <div class="time-option">12:00 PM</div>
+            <div class="time-option">1:00 PM</div>
+            <div class="time-option">2:00 PM</div>
+        </div>
+        <div class="actions">
+            Actions for booked appointments
+            <button class="btn btn-primary">Accept</button>
+            <button class="btn btn-danger">Delete</button>
+            <button class="btn btn-secondary">Propose New Time</button>
+        </div>
+    </div>
+</div>
+@*@model List<WebNutricion.Models.Appointment>
+
+    @{
+        ViewBag.Title = "Admin Appointments";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    <div class="container mt-5">
+        <h2>Admin Appointments</h2>
+        @if (TempData["Message"] != null)
+        {
+            <div class="alert alert-success" role="alert">
+                @TempData["Message"]
+            </div>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @TempData["Error"]
+            </div>
+        }
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>User</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var appointment in Model)
+                    {
+                        <tr>
+                            <td>@appointment.Date.ToShortDateString()</td>
+                            <td>@appointment.Time</td>
+                            <td>@appointment.User</td>
+                            <td>@appointment.Status</td>
+                            <td>
+                                @if (appointment.Status == "Available")
+                                {
+                                    <form action="@Url.Action("AcceptAppointment", "Appointment")" method="post" class="d-inline">
+                                        <input type="hidden" name="id" value="@appointment.Id" />
+                                        <button type="submit" class="btn btn-success btn-sm">Accept</button>
+                                    </form>
+                                }
+                                <form action="@Url.Action("DeleteAppointment", "Appointment")" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@appointment.Id" />
+                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                </form>
+                                <form action="@Url.Action("ProposeNewTime", "Appointment")" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@appointment.Id" />
+                                    <input type="datetime" name="newDate" value="" />
+                                    <input type="time" name="newTime" value="" />
+                                    <button type="submit" class="btn btn-secondary btn-sm">Propose New Time</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5">No appointments available.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>*@

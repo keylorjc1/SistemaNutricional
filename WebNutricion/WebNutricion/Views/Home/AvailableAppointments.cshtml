@@ -1,0 +1,84 @@
+﻿@model List<WebNutricion.Models.Appointment>
+
+@{
+    ViewBag.Title = "Available Appointments";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container mt-5">
+    <h2>Available Appointments</h2>
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <h4>Select Date and Time</h4>
+            <div class="form-group">
+                <label for="datepicker">Select Date:</label>
+                <select id="datepicker" class="form-control">
+                    Populate options dynamically based on available dates
+                    <option value="2024-03-14">March 14, 2024</option>
+                    <option value="2024-03-15">March 15, 2024</option>
+                    Add more options as needed
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="timepicker">Select Time:</label>
+                <select id="timepicker" class="form-control">
+                    Populate options dynamically based on available appointment times
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    Add more options as needed
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Initialize datepicker using jQuery UI
+            $('#datepicker').select2({
+                // Add your select2 settings here
+            });
+        });
+    </script>
+}
+
+@*@model List<WebNutricion.Models.Appointment>
+
+    @{
+        ViewBag.Title = "Available Appointments";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    <div class="container mt-5">
+        <h2>Available Appointments</h2>
+        @if (TempData["Message"] != null)
+        {
+            <div class="alert alert-success" role="alert">
+                @TempData["Message"]
+            </div>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @TempData["Error"]
+            </div>
+        }
+
+        @if (Model != null && Model.Any())
+        {
+            <form action="@Url.Action("BookAppointment", "Appointment")" method="post">
+                <select name="SelectedAppointment" class="form-control">
+                    @foreach (var appointment in Model)
+                    {
+                        <option value="@appointment.Id">@appointment.Date.ToShortDateString()</option>
+                    }
+                </select>
+                <button type="submit" class="btn btn-primary mt-3">Book Appointment</button>
+            </form>
+        }
+        else
+        {
+            <p>No available appointments.</p>
+        }
+    </div>*@

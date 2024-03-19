@@ -6,10 +6,10 @@
     {
     @Html.AntiForgeryToken()
 
-    <ul class="navbar-nav navbar-right">
-        <li>
+<ul class="navbar-nav navbar-right">
+    <li>
         @Html.ActionLink("Hola " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
-        </li>
+    </li>
     @if (User.Identity.IsAuthenticated)
     {
         var claimsIdentity = User.Identity as System.Security.Claims.ClaimsIdentity;
@@ -21,7 +21,14 @@
         }
     }
     <li><a class="nav-link" href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a></li>
+</ul>
+    }
+}
+else
+{
 
+
+<ul class="navbar-nav navbar-right">
     <li>@Html.ActionLink("Iniciar sesión", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "nav-link" })</li>
 </ul>
 }

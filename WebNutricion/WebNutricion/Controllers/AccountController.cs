@@ -151,7 +151,7 @@ namespace WebNutricion.Controllers
 
         //
         // GET: /Account/Register
-        [AllowAnonymous]
+        [Authorize(Roles = "Admin")]     
         public ActionResult Register()
         {
             List<Role> rolesBD = RoleManager.Roles.ToList();

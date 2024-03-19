@@ -181,6 +181,8 @@ namespace WebNutricion.Controllers
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
+                IdentityResult resultRole = UserManager.AddToRole(user.Id,
+                    RoleManager.Roles.Where(r => r.Id == model.Rol).FirstOrDefault().Name);
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);

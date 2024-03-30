@@ -213,6 +213,18 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="WebStyle\css\bootstrap.min.css" />
+    <Content Include="WebStyle\css\bootstrap\mixins\_border-radius.css" />
+    <Content Include="WebStyle\css\bootstrap\mixins\_grid-framework.css" />
+    <Content Include="WebStyle\css\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="WebStyle\css\bootstrap\mixins\_visibility.css" />
+    <Content Include="WebStyle\css\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="WebStyle\css\bootstrap\_media.css" />
+    <Content Include="WebStyle\css\style.css" />
+    <Content Include="WebStyle\js\bootstrap.min.js" />
+    <Content Include="WebStyle\js\jquery.min.js" />
+    <Content Include="WebStyle\js\main.js" />
+    <Content Include="WebStyle\js\popper.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -260,6 +272,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\AdminAppointments.cshtml" />
     <Content Include="Views\Home\AvailableAppointments.cshtml" />
+    <Content Include="WebStyle\js\.DS_Store" />
+    <Content Include="WebStyle\css\.DS_Store" />
+    <Content Include="WebStyle\css\bootstrap\.DS_Store" />
+    <Content Include="WebStyle\css\bootstrap\mixins\.DS_Store" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

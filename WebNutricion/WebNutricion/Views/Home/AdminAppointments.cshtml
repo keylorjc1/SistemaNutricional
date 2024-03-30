@@ -1,188 +1,104 @@
-﻿@model List<WebNutricion.Models.Appointment>
+﻿<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="~/WebStyle/css/style.css">
 
 @{
     ViewBag.Title = "Admin Appointments";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <style>
-    /* CSS no Boostrap ya que no me esta tomando los estilos de boostrap, pasarlo a otra carpeta pero es de prueba  */
-    body {
-        font-family: Arial, sans-serif;
+    .disabled-date {
+        background-color: #cccccc;
+        color: #888888;
+        pointer-events: none;
     }
-
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    h2 {
-        text-align: center;
-    }
-
-    .calendar-container {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-        padding: 20px;
-    }
-
-    .calendar-header {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .calendar {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        gap: 5px;
-    }
-
-    .calendar-cell {
-        padding: 10px;
-        text-align: center;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        cursor: pointer;
-    }
-
-        .calendar-cell:hover {
-            background-color: #e0e0e0;
-        }
-
-    .selected {
-        background-color: #007bff;
-        color: #fff;
-    }
-
-    .time-selection {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .time-option {
-        margin: 0 5px;
-        padding: 10px 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-        .time-option:hover {
-            background-color: #007bff;
-            color: #fff;
-        }
 </style>
 
-<div class="container mt-5">
-    <h2>Admin Appointments</h2>
-    <div class="calendar-container">
-        <div class="calendar-header">
-            <h2>Calendar with Time Selection</h2>
-        </div>
-        <div class="calendar">
-            Days of the week
-            <div class="calendar-cell">Mon</div>
-            <div class="calendar-cell">Tue</div>
-            <div class="calendar-cell">Wed</div>
-            <div class="calendar-cell">Thu</div>
-            <div class="calendar-cell">Fri</div>
-            <div class="calendar-cell">Sat</div>
-            Days of the month
-            @*This part can be generated dynamically using server-side code*@
-            <div class="calendar-cell" data-date="2024-03-15">15</div>
-            <div class="calendar-cell" data-date="2024-03-16">16</div>
-            <div class="calendar-cell" data-date="2024-03-17">17</div>
-            <div class="calendar-cell" data-date="2024-03-18">18</div>
-            <div class="calendar-cell" data-date="2024-03-19">19</div>
-            <div class="calendar-cell" data-date="2024-03-19">20</div>
-        </div>
-        <div class="time-selection">
-            Time options
-            <div class="time-option">10:00 AM</div>
-            <div class="time-option">11:00 AM</div>
-            <div class="time-option">12:00 PM</div>
-            <div class="time-option">1:00 PM</div>
-            <div class="time-option">2:00 PM</div>
-        </div>
-        <div class="actions">
-            Actions for booked appointments
-            <button class="btn btn-primary">Accept</button>
-            <button class="btn btn-danger">Delete</button>
-            <button class="btn btn-secondary">Propose New Time</button>
-        </div>
-    </div>
-</div>
-@*@model List<WebNutricion.Models.Appointment>
-
-    @{
-        ViewBag.Title = "Admin Appointments";
-        Layout = "~/Views/Shared/_Layout.cshtml";
-    }
-
-    <div class="container mt-5">
-        <h2>Admin Appointments</h2>
-        @if (TempData["Message"] != null)
-        {
-            <div class="alert alert-success" role="alert">
-                @TempData["Message"]
+<body>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">Administrador De Citas</h2>
+                </div>
             </div>
-        }
-        @if (TempData["Error"] != null)
-        {
-            <div class="alert alert-danger" role="alert">
-                @TempData["Error"]
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content w-100">
+                        <div class="calendar-container">
+                            <input type="button" value="Hoy" class="button" id="today-button">
+                            <div class="calendar">
+                                <div class="year-header">
+                                    <span class="left-button fa fa-chevron-left" id="prev"> </span>
+                                    <span class="year" id="label"></span>
+                                    <span class="right-button fa fa-chevron-right" id="next"> </span>
+                                </div>
+                                <table class="months-table w-100">
+                                    <tbody>
+                                        <tr class="months-row">
+                                            <td class="month">Ene</td>
+                                            <td class="month">Feb</td>
+                                            <td class="month">Mar</td>
+                                            <td class="month">Abr</td>
+                                            <td class="month">May</td>
+                                            <td class="month">Jun</td>
+                                            <td class="month">Jul</td>
+                                            <td class="month">Ago</td>
+                                            <td class="month">Sep</td>
+                                            <td class="month">Oct</td>
+                                            <td class="month">Nov</td>
+                                            <td class="month">Dic</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="days-table w-100">
+                                    <td class="day">Dom</td>
+                                    <td class="day">Lun</td>
+                                    <td class="day">Mar</td>
+                                    <td class="day">Mié</td>
+                                    <td class="day">Jue</td>
+                                    <td class="day">Vie</td>
+                                    <td class="day">Sáb</td>
+                                </table>
+                                <div class="frame">
+                                    <table class="dates-table w-100">
+                                        <tbody class="tbody">
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <button class="button" id="add-button">Agregar Cita</button>
+                            </div>
+                        </div>
+                        <div class="events-container">
+                        </div>
+                        <div class="dialog" id="dialog">
+                            <h2 class="dialog-header"> Agregar Cita </h2>
+                            <form class="form" id="form">
+                                <div class="form-container" align="center">
+                                    <label class="form-label" for="name">Titulo</label>
+                                    <input class="input" type="text" id="name" maxlength="36">
+                                    <label class="form-label" for="fullName">Nombre Completo</label>
+                                    <input class="input" type="text" id="fullName" maxlength="36">
+                                    <label class="form-label" for="email">Correo</label>
+                                    <input class="input" type="text" id="email" maxlength="36">
+                                    <label class="form-label" for="time">Seleccionar Hora</label>
+                                    <input class="input" type="time" id="time">
+                                    <input type="button" value="Cancel" class="button" id="cancel-button">
+                                    <input type="button" value="OK" class="button button-white" id="ok-button">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        }
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>User</th>
-                    <th>Status</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (Model != null && Model.Any())
-                {
-                    foreach (var appointment in Model)
-                    {
-                        <tr>
-                            <td>@appointment.Date.ToShortDateString()</td>
-                            <td>@appointment.Time</td>
-                            <td>@appointment.User</td>
-                            <td>@appointment.Status</td>
-                            <td>
-                                @if (appointment.Status == "Available")
-                                {
-                                    <form action="@Url.Action("AcceptAppointment", "Appointment")" method="post" class="d-inline">
-                                        <input type="hidden" name="id" value="@appointment.Id" />
-                                        <button type="submit" class="btn btn-success btn-sm">Accept</button>
-                                    </form>
-                                }
-                                <form action="@Url.Action("DeleteAppointment", "Appointment")" method="post" class="d-inline">
-                                    <input type="hidden" name="id" value="@appointment.Id" />
-                                    <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                                </form>
-                                <form action="@Url.Action("ProposeNewTime", "Appointment")" method="post" class="d-inline">
-                                    <input type="hidden" name="id" value="@appointment.Id" />
-                                    <input type="datetime" name="newDate" value="" />
-                                    <input type="time" name="newTime" value="" />
-                                    <button type="submit" class="btn btn-secondary btn-sm">Propose New Time</button>
-                                </form>
-                            </td>
-                        </tr>
-                    }
-                }
-                else
-                {
-                    <tr>
-                        <td colspan="5">No appointments available.</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>*@
+        </div>
+    </section>
+    <script src="~/WebStyle/js/jquery.min.js"></script>
+    <script src="~/WebStyle/js/popper.js"></script>
+    <script src="~/WebStyle/js/bootstrap.min.js"></script>
+    <script src="~/WebStyle/js/main.js"></script>
+</body>

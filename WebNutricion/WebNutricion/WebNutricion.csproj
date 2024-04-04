@@ -213,6 +213,7 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="WebStyle\cssForm\css\style.css" />
     <Content Include="WebStyle\css\bootstrap.min.css" />
     <Content Include="WebStyle\css\bootstrap\mixins\_border-radius.css" />
     <Content Include="WebStyle\css\bootstrap\mixins\_grid-framework.css" />
@@ -221,6 +222,9 @@
     <Content Include="WebStyle\css\bootstrap\utilities\_stretched-link.css" />
     <Content Include="WebStyle\css\bootstrap\_media.css" />
     <Content Include="WebStyle\css\style.css" />
+    <Content Include="WebStyle\jsForm\js\jquery-3.3.1.min.js" />
+    <Content Include="WebStyle\jsForm\js\jquery.steps.js" />
+    <Content Include="WebStyle\jsForm\js\main.js" />
     <Content Include="WebStyle\js\bootstrap.min.js" />
     <Content Include="WebStyle\js\jquery.min.js" />
     <Content Include="WebStyle\js\main.js" />
@@ -276,6 +280,8 @@
     <Content Include="WebStyle\css\.DS_Store" />
     <Content Include="WebStyle\css\bootstrap\.DS_Store" />
     <Content Include="WebStyle\css\bootstrap\mixins\.DS_Store" />
+    <Content Include="WebStyle\cssForm\css\style.css.map" />
+    <Content Include="WebStyle\cssForm\css\style.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,90 +1,211 @@
-﻿@{
-    ViewBag.Title = "Available Appointments";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿@*@{
+        ViewBag.Title = "Available Appointments";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    <style>
+        .image-section {
+            background-image: url('https://www.nwpc.com/wp-content/uploads/2019/09/healthy-eating.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+
+    <div class="image-section">
+        <h1>SOLICITAR CITA</h1>
+        <p>Inicio / Solicitar cita</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="inputName">Nombre</label>
+                        <input type="text" class="form-control" id="inputName" name="name" placeholder="Ingresa tu nombre" required />
+                        <small class="form-text text-muted">Por favor ingresa tu numero</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPhone">Teléfono</label>
+                        <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="+506xxxxxxx" pattern="\d{3}\d{3}\d{4}" required />
+                        <small class="form-text text-muted">Nunca vamos a compartir tu teléfono con otras personas.</small>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputDate">Fecha</label>
+                            <input type="date" class="form-control" id="inputDate" name="date" required />
+                        </div>
+                        <div>
+
+                            <label for="timeOfDay">Seleccionar el horario de la cita que te gustaría:</label>
+                            <select id="timeOfDay">
+                                <option value="morning">Mañana</option>
+                                <option value="afternoon">Tarde</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="textAreaRemark">Alguna nota extra que te gustaría agregar</label>
+                            <textarea class="form-control" name="remark" id="textAreaRemark" rows="2" placeholder="Déjanos un mensaje..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block col-lg-2" id="sendButton">Enviar</button>
+            </div>
+
+            <script>
+                document.getElementById('sendButton').addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    // Obtener los valores de los campos del formulario
+                    var name = document.getElementById('inputName').value.trim();
+                    var email = document.getElementById('inputEmail').value.trim();
+                    var phone = document.getElementById('inputPhone').value.trim();
+                    var date = document.getElementById('inputDate').value.trim();
+                    var timeOfDay = document.getElementById('timeOfDay').value;
+                    var remark = document.getElementById('textAreaRemark').value.trim();
+
+                    // Validar que los campos no estén en blanco
+                    if (name === '' || email === '' || phone === '' || date === '') {
+                        alert('Por favor, completa todos los campos obligatorios.');
+                        return;
+                    }
+
+                    // Crear el mensaje con los valores del formulario
+                    var message = `Nombre: ${name}%0ACorreo: ${email}%0ATeléfono: ${phone}%0AFecha: ${date}%0AHorario: ${timeOfDay}%0ANota: ${remark}`;
+
+                    // Construir la URL de WhatsApp con el mensaje
+                    var whatsappUrl = `https://wa.me/50687613449?text=${message}`;
+
+                    // Abrir la ventana de WhatsApp
+                    window.open(whatsappUrl);
+                });
+            </script>*@
 
 <style>
-    .image-section {
-        background-image: url('https://www.nwpc.com/wp-content/uploads/2019/09/healthy-eating.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: #fff;
+    body {
+        color: #000;
+        overflow-x: hidden;
+        height: 100%;
+        background-image: url("https://images.pexels.com/photos/1414131/pexels-photo-1414131.jpeg?auto=compress&cs=tinysrgb&w=600");
+        background-repeat: no-repeat;
+        background-size: 100% 100%
+    }
+
+    .card {
+        padding: 30px 40px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        border: none !important;
+        box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)
+    }
+
+    .blue-text {
+        color: #00BCD4
+    }
+
+    .form-control-label {
+        margin-bottom: 0
+    }
+
+    input, textarea, button {
+        padding: 8px 15px;
+        border-radius: 5px !important;
+        margin: 5px 0px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        font-size: 18px !important;
+        font-weight: 300
+    }
+
+        input:focus, textarea:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: 1px solid #00BCD4;
+            outline-width: 0;
+            font-weight: 400
+        }
+
+    .btn-block {
+        text-transform: uppercase;
+        font-size: 15px !important;
+        font-weight: 400;
+        height: 43px;
+        cursor: pointer
+    }
+
+        .btn-block:hover {
+            color: #fff !important
+        }
+
+    button:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        outline-width: 0
     }
 </style>
 
-<div class="image-section">
-    <h1>SOLICITAR CITA</h1>
-    <p>Inicio / Solicitar cita</p>
+
+<div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <h3>Completa el formulario para solicitar una cita</h3>
+            <p class="black-text">Simplemente responde algunas preguntas<br> para que podamos personalizar la experiencia adecuada para ti.</p>
+            <div class="card">
+                <h5 class="text-center mb-4">Nutricion Manuel Sanabria</h5>
+                <form class="form-card" onsubmit="event.preventDefault()">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label for="inputName" class="form-control-label px-3">Nombre Completo<span class="text-danger"> *</span></label> <input type="text" id="inputName" name="name" placeholder="Ingresa tu nombre completo" required"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label for="inputPhone" class="form-control-label px-3">Teléfono<span class="text-danger"> *</span></label> <input type="text" id="inputPhone" name="phone" placeholder="+506xxxxxxx" pattern="\d{3}\d{3}\d{4}" required"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label for="inputDate" class="form-control-label px-3">Fecha<span class="text-danger"> *</span></label> <input type="date" id="inputDate" name="date" required"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label for="timeOfDay" class="form-control-label px-3">Seleccionar el horario de la cita que te gustaría:<span class="text-danger"> *</span></label> <select required" id="timeOfDay"><option value="mañana">Mañana</option><option value="tarde">Tarde</option></select></div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label for="textAreaRemark">Alguna nota extra que te gustaría agregar<span class="text-danger"> *</span></label>  <textarea class="form-control" name="remark" id="textAreaRemark" rows="2" placeholder="Déjanos un mensaje..."></textarea> </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="form-group col-sm-6"> <button type="submit" id="sendButton" class="btn-block btn-primary">Enviar</button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="row justify-content-center">
-    <div class="col-lg-6">
-        <div class="card">
-            <div class="card-body">
-                <div class="form-group">
-                    <label for="inputName">Nombre</label>
-                    <input type="text" class="form-control" id="inputName" name="name" placeholder="Ingresa tu nombre" required />
-                    <small class="form-text text-muted">Por favor ingresa tu numero</small>
-                </div>
-                <div class="form-group">
-                    <label for="inputPhone">Teléfono</label>
-                    <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="+506xxxxxxx" pattern="\d{3}\d{3}\d{4}" required />
-                    <small class="form-text text-muted">Nunca vamos a compartir tu teléfono con otras personas.</small>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="inputDate">Fecha</label>
-                        <input type="date" class="form-control" id="inputDate" name="date" required />
-                        <small class="form-text text-muted">Por favor seleccionar el día que te gustaría la cita.</small>
-                    </div>
-                    <div>
+<script>
+    document.getElementById('sendButton').addEventListener('click', function (e) {
+        e.preventDefault();
 
-                        <label for="timeOfDay">Seleccionar el horario de la cita que te gustaría:</label>
-                        <select id="timeOfDay">
-                            <option value="morning">Mañana</option>
-                            <option value="afternoon">Tarde</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="textAreaRemark">Alguna nota extra que te gustaría agregar</label>
-                        <textarea class="form-control" name="remark" id="textAreaRemark" rows="2" placeholder="Déjanos un mensaje..."></textarea>
-                    </div>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block col-lg-2" id="sendButton">Enviar</button>
-        </div>
+        // Obtener los valores de los campos del formulario
+        var name = document.getElementById('inputName').value.trim();
+        var phone = document.getElementById('inputPhone').value.trim();
+        var date = document.getElementById('inputDate').value.trim();
+        var timeOfDay = document.getElementById('timeOfDay').value;
+        var remark = document.getElementById('textAreaRemark').value.trim();
 
-        <script>
-            document.getElementById('sendButton').addEventListener('click', function (e) {
-                e.preventDefault();
+        // Validar que los campos no estén en blanco
+        if (name === '' || phone === '' || date === '') {
+            alert('Por favor, completa todos los campos obligatorios.');
+            return;
+        }
 
-                // Obtener los valores de los campos del formulario
-                var name = document.getElementById('inputName').value.trim();
-                var email = document.getElementById('inputEmail').value.trim();
-                var phone = document.getElementById('inputPhone').value.trim();
-                var date = document.getElementById('inputDate').value.trim();
-                var timeOfDay = document.getElementById('timeOfDay').value;
-                var remark = document.getElementById('textAreaRemark').value.trim();
+        // Crear el mensaje con los valores del formulario
+        var message = `Tenemos la siguiente solicitud para una cita: ${name}%0ACorreo: ${phone}%0AFecha: ${date}%0AHorario: ${timeOfDay}%0ANota: ${remark}`;
 
-                // Validar que los campos no estén en blanco
-                if (name === '' || email === '' || phone === '' || date === '') {
-                    alert('Por favor, completa todos los campos obligatorios.');
-                    return;
-                }
+        // Construir la URL de WhatsApp con el mensaje
+        var whatsappUrl = `https://wa.me/50687613449?text=${message}`;
 
-                // Crear el mensaje con los valores del formulario
-                var message = `Nombre: ${name}%0ACorreo: ${email}%0ATeléfono: ${phone}%0AFecha: ${date}%0AHorario: ${timeOfDay}%0ANota: ${remark}`;
-
-                // Construir la URL de WhatsApp con el mensaje
-                var whatsappUrl = `https://wa.me/50687613449?text=${message}`;
-
-                // Abrir la ventana de WhatsApp
-                window.open(whatsappUrl);
-            });
-        </script>
+        // Abrir la ventana de WhatsApp
+        window.open(whatsappUrl);
+    });
+</script>

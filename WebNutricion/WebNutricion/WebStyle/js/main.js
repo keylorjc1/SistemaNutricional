@@ -245,7 +245,7 @@
                 var event_subject = $("<div class='event-subject'>" + events[i]["occasion"] + "</div>");
                 var event_time = $("<div class='event-time'>Hora: " + events[i]["time"] + "</div>");
                 var event_name = $("<div class='event-fullName'>Nombre: " + events[i]["fullName"] + "</div>");
-                var event_email = $("<div class='event-email'>Correo: " + events[i]["email"] + "</div>");
+                var event_email = $("<div class='event-email'>Telefono: " + events[i]["email"] + "</div>");
                 var event_edit = $("<button class='button edit-button'>Edit</button>");
                 var event_delete = $("<button class='button delete-button'>Delete</button>");
 
@@ -275,7 +275,7 @@
         var event_subject = event_card.find('.event-subject').text();
         var event_time = event_card.find('.event-time').text().replace("Hora: ", "");
         var event_name = event_card.find('.event-fullName').text().replace("Nombre: ", "");
-        var event_email = event_card.find('.event-email').text().replace("Correo: ", ""); // Retrieve email from event card
+        var event_email = event_card.find('.event-email').text().replace("Telefono: ", ""); // Retrieve email from event card
 
         // Pre-fill input fields in the dialog with existing event data
         $("#name").val(event_subject);
@@ -313,7 +313,7 @@
                 event_card.find('.event-subject').text(name);
                 event_card.find('.event-time').text("Hora: " + newTime);
                 event_card.find('.event-fullName').text("Nombre: " + newFullName);
-                event_card.find('.event-email').text("Correo: " + newEmail); // Update email in event card
+                event_card.find('.event-email').text("Telefono: " + newEmail); // Update email in event card
 
                 // Hide the dialog
                 $("#dialog").hide(250);

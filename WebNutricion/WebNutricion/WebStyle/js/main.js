@@ -154,117 +154,64 @@
         // if a date isn't selected then do nothing
         if ($(".active-date").length === 0)
             return;
+
         // remove red error input on click
         $("input").click(function () {
             $(this).removeClass("error-input");
-        })
-        // empty inputs and hide events
-        $("#dialog input[type=text]").val('');
-        $("#dialog input[type=number]").val('');
-        $(".events-container").hide(250);
-        $("#dialog").show(250);
-        // Event handler for cancel button
-        $("#cancel-button").click(function () {
-            $("#name").removeClass("error-input");
-            $("#count").removeClass("error-input");
-            $("#dialog").hide(250);
-            $(".events-container").show(250);
-        });
-        // Event handler for ok button
-        $("#ok-button").unbind().click({ date: event.data.date }, function () {
-            var date = event.data.date;
-            var name = $("#name").val().trim();
-            var fullName = $("#fullName").val().trim();
-            var email = $("#email").val().trim();
-            var time = $("#time").val();
-            var day = parseInt($(".active-date").html());
-
-            // Check if an event within 30 minutes already exists
-            var existingEvents = check_events(day, date.getMonth() + 1, date.getFullYear());
-            for (var i = 0; i < existingEvents.length; i++) {
-                var existingTime = existingEvents[i]["time"].split(":");
-                var newTime = time.split(":");
-                if (Math.abs(existingTime[0] - newTime[0]) < 1 && Math.abs(existingTime[1] - newTime[1]) < 30) {
-                    alert("Ya existe un evento dentro de los proximos 30 minutos!");
-                    return;
-                }
-            }
-
-            // Basic form validation
-            if (name.length === 0) {
-                $("#name").addClass("error-input");
-            }
-            else if (!/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/.test(time)) {
-                $("#time").addClass("error-input");
-            }
-            else {
-                $("#dialog").hide(250);
-                console.log("new event");
-                new_event_json(name, fullName, time, date, day, email);
-                date.setDate(day);
-                init_calendar(date);
-            }
         });
 
-    }
-
-    // Adds a json event to event_data
-    function new_event_json(name, fullName, time, date, day, email) {
-        var event = {
-            "occasion": name,
-            "fullName": fullName,
-            "time": time,
-            "year": date.getFullYear(),
-            "month": date.getMonth() + 1,
-            "day": day,
-            "email": email
-        };
-        event_data["events"].push(event);
-    }
-
-    // Display all events of the selected date in card views
-    function show_events(events, month, day) {
+        // gather data from input fields
+        var name = $("#name").val().trim();
         var fullName = $("#fullName").val().trim();
-        // Clear the dates container
-        $(".events-container").empty();
-        $(".events-container").show(250);
-        console.log(event_data["events"]);
-        // If there are no events for this date, notify the user
-        if (events.length === 0) {
-            var event_card = $("<div class='event-card'></div>");
-            var event_name = $("<div class='event-name'>No hay citas agendadas para esta fecha.</div>");
-            $(event_card).css({ "border-left": "10px solid #FF1744" });
-            $(event_card).append(event_name);
-            $(".events-container").append(event_card);
+        var email = $("#email").val().trim();
+        var time = $("#time").val();
+        var day = parseInt($(".active-date").html());
+
+        // Check if an event within 30 minutes already exists
+        var existingEvents = check_events(day, event.data.date.getMonth() + 1, event.data.date.getFullYear());
+        for (var i = 0; i < existingEvents.length; i++) {
+            var existingTime = existingEvents[i]["time"].split(":");
+            var newTime = time.split(":");
+            if (Math.abs(existingTime[0] - newTime[0]) < 1 && Math.abs(existingTime[1] - newTime[1]) < 30) {
+                alert("Ya existe un evento dentro de los proximos 30 minutos!");
+                return;
+            }
+        }
+
+        // Basic form validation
+        if (name.length === 0) {
+            $("#name").addClass("error-input");
+        }
+        else if (!/^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/.test(time)) {
+            $("#time").addClass("error-input");
         }
         else {
-            // Go through and add each event as a card to the events container
-            for (var i = 0; i < events.length; i++) {
-                var event_card = $("<div class='event-card'></div>");
-                $(event_card).data("eventData", events[i]);
-                var event_subject = $("<div class='event-subject'>" + events[i]["occasion"] + "</div>");
-                var event_time = $("<div class='event-time'>Hora: " + events[i]["time"] + "</div>");
-                var event_name = $("<div class='event-fullName'>Nombre: " + events[i]["fullName"] + "</div>");
-                var event_email = $("<div class='event-email'>Telefono: " + events[i]["email"] + "</div>");
-                var event_edit = $("<button class='button edit-button'>Edit</button>");
-                var event_delete = $("<button class='button delete-button'>Delete</button>");
-
-                // Attach event listeners to buttons
-                event_edit.on("click", edit_event);
-                event_delete.on("click", delete_event);
-
-                if (events[i]["cancelled"] === true) {
-                    $(event_card).css({
-                        "border-left": "10px solid #FF1744"
-                    });
-                    event_time = $("<div class='event-cancelled'>Cancelled</div>");
+            // make AJAX call to add appointment
+            $.ajax({
+                url: '@Url.Action("AddAppointment", "Appointment")',
+                type: 'POST',
+                data: {
+                    name: name,
+                    fullName: fullName,
+                    email: email,
+                    time: time,
+                    day: day
+                },
+                success: function (result) {
+                    // handle success
+                    console.log(result);
+                    alert("Appointment added successfully!");
+                    // You can add further logic here like refreshing the page or updating UI
+                },
+                error: function (xhr, status, error) {
+                    // handle error
+                    console.log(error);
+                    alert("Failed to add appointment.");
                 }
-                $(event_card).append(event_subject).append(event_time).append(event_name).append(event_email)
-                    .append(event_edit).append(event_delete);
-                $(".events-container").append(event_card);
-            }
+            });
         }
     }
+
 
     // Event handler for clicking the "Edit" button
     function edit_event() {

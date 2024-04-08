@@ -40,5 +40,6 @@ namespace WebNutricion.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Appointment> Appointments { get; set; }
     }
 }

@@ -1,0 +1,247 @@
+﻿@model WebNutricion.Models.GestionModel
+
+@{
+    ViewBag.Title = "Crear Plan";
+}
+
+<h2>Crear Plan</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Plan de Alimentación</h4>
+    <hr />
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanAlimentacion.Desayuno, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanAlimentacion.Desayuno, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanAlimentacion.Desayuno, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanAlimentacion.almuerzo, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanAlimentacion.almuerzo, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanAlimentacion.almuerzo, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanAlimentacion.merienda, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanAlimentacion.merienda, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanAlimentacion.merienda, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanAlimentacion.cena, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanAlimentacion.cena, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanAlimentacion.cena, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanAlimentacion.calorias, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanAlimentacion.calorias, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanAlimentacion.calorias, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanAlimentacion.fecha, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanAlimentacion.fecha, new { htmlAttributes = new { @class = "form-control", @Value = DateTime.Now.ToShortDateString() } })
+            @Html.ValidationMessageFor(model => model.PlanAlimentacion.fecha, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanAlimentacion.idUser, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <!-- Aquí asignamos automáticamente el id de usuario recibido -->
+            @Html.HiddenFor(model => model.PlanAlimentacion.idUser, new { Value = ViewBag.UserId })
+        </div>
+    </div>
+
+
+
+    <h4>Planificación Nutricional</h4>
+    <hr />
+    <h1>Calculadora de Calorías Diarias</h1>
+    <form id="calorieCalculator">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" required><br><br>
+
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" required><br><br>
+
+        <label for="edad">Edad (años):</label>
+        <input type="number" id="edad" required><br><br>
+
+        <label for="genero">Género:</label>
+        <select id="genero">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select><br><br>
+
+        <label for="actividad">Nivel de actividad:</label>
+        <select id="actividad">
+            <option value="poco">Poco o ningún ejercicio</option>
+            <option value="ligero">Ejercicio ligero (1 - 3 días por semana)</option>
+            <option value="moderado">Ejercicio moderado (3 - 5 días por semana)</option>
+            <option value="fuerte">Ejercicio fuerte (6 - 7 días por semana)</option>
+            <option value="muy fuerte">Ejercicio muy fuerte (dos veces al día, entrenamientos muy duros)</option>
+        </select><br><br>
+
+        <button type="button" onclick="calcularCalorias()">Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script>
+        function calcularCalorias() {
+            var peso = parseFloat(document.getElementById("peso").value);
+            var altura = parseFloat(document.getElementById("altura").value);
+            var edad = parseInt(document.getElementById("edad").value);
+            var genero = document.getElementById("genero").value;
+            var actividad = document.getElementById("actividad").value;
+            var TMB;
+
+            if (genero === "hombre") {
+                TMB = (10 * peso) + (6.25 * altura) - (5 * edad) + 5;
+            } else if (genero === "mujer") {
+                TMB = (10 * peso) + (6.25 * altura) - (5 * edad) - 161;
+            } else {
+                document.getElementById("resultado").innerHTML = "Género no válido";
+                return;
+            }
+
+            var caloriasDiarias;
+            switch (actividad) {
+                case "poco":
+                    caloriasDiarias = TMB * 1.2;
+                    break;
+                case "ligero":
+                    caloriasDiarias = TMB * 1.375;
+                    break;
+                case "moderado":
+                    caloriasDiarias = TMB * 1.55;
+                    break;
+                case "fuerte":
+                    caloriasDiarias = TMB * 1.725;
+                    break;
+                case "muy fuerte":
+                    caloriasDiarias = TMB * 1.9;
+                    break;
+                default:
+                    caloriasDiarias = "Nivel de actividad no válido";
+            }
+
+            // Actualizar los campos de metabolismo basal y calorías diarias en el formulario HTML
+            document.getElementById("PlanificacionNutricional_metabolismobasal").value = TMB.toFixed(0); // Redondear sin decimales
+            document.getElementById("PlanificacionNutricional_caloriasdiarias").value = caloriasDiarias.toFixed(0); // Redondear sin decimal
+
+    document.getElementById("resultado").innerHTML = "Tu TMB es: " + TMB.toFixed(2) + " kcal <br>Tu necesidad calórica diaria es: " + caloriasDiarias.toFixed(2) + " kcal";
+}
+    </script>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanificacionNutricional.peso, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanificacionNutricional.peso, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanificacionNutricional.peso, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanificacionNutricional.altura, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanificacionNutricional.altura, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanificacionNutricional.altura, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanificacionNutricional.IMC, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanificacionNutricional.IMC, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanificacionNutricional.IMC, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanificacionNutricional.grasacorporal, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanificacionNutricional.grasacorporal, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanificacionNutricional.grasacorporal, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanificacionNutricional.metabolismobasal, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanificacionNutricional.metabolismobasal, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanificacionNutricional.metabolismobasal, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanificacionNutricional.caloriasdiarias, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanificacionNutricional.caloriasdiarias, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanificacionNutricional.caloriasdiarias, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanificacionNutricional.proteinas, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanificacionNutricional.proteinas, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanificacionNutricional.proteinas, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanificacionNutricional.carbohidratos, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanificacionNutricional.carbohidratos, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanificacionNutricional.carbohidratos, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanificacionNutricional.grasas, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanificacionNutricional.grasas, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanificacionNutricional.grasas, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanificacionNutricional.objetivo, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanificacionNutricional.objetivo, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PlanificacionNutricional.objetivo, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanificacionNutricional.fecha, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PlanificacionNutricional.fecha, new { htmlAttributes = new { @class = "form-control", @Value = DateTime.Now.ToShortDateString() } })
+            @Html.ValidationMessageFor(model => model.PlanificacionNutricional.fecha, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.PlanAlimentacion.idUser, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <!-- Aquí asignamos automáticamente el id de usuario recibido -->
+            @Html.HiddenFor(model => model.PlanAlimentacion.idUser, new { Value = ViewBag.UserId })
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Guardar" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Volver al Listado", "Index")
+</div>

@@ -1,0 +1,82 @@
+﻿@model WebNutricion.Models.planAlimentacion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>planAlimentacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AspNetUser.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AspNetUser.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.desayuno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.desayuno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.almuerzo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.almuerzo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.merienda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.merienda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cena)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cena)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.calorias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.calorias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idPlan }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -10,14 +10,17 @@ namespace WebNutricion.Models
     public partial class planificacionNutricional
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int idPlanificacionNutricional { get; set; }
 
-        public int? porcentajedemasagrasa { get; set; }
+        public int? peso { get; set; }
+
+        public int? altura { get; set; }
+
+        public int? IMC { get; set; }
+
+        public int? grasacorporal { get; set; }
 
         public int? metabolismobasal { get; set; }
-
-        public int? actividadfisica { get; set; }
 
         public int? caloriasdiarias { get; set; }
 
@@ -30,10 +33,14 @@ namespace WebNutricion.Models
         [StringLength(100)]
         public string objetivo { get; set; }
 
-        public int? peso { get; set; }
+        [StringLength(9)]
+        public string Cedula { get; set; }
 
-        public int? altura { get; set; }
+        public DateTime? fecha { get; set; }
 
-        public virtual datosAntropometrico datosAntropometrico { get; set; }
+        [StringLength(128)]
+        public string idUser { get; set; }
+
+        public virtual AspNetUser AspNetUser { get; set; }
     }
 }

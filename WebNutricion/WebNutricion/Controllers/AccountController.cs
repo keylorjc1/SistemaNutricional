@@ -151,12 +151,16 @@ namespace WebNutricion.Controllers
 
         //
         // GET: /Account/Register
-        [Authorize(Roles = "Admin")]     
+        // [AllowAnonymous]
+
+        //[Authorize(Roles = "Admin")]
+        [AllowAnonymous]
+
         public ActionResult Register()
         {
             List<Role> rolesBD = RoleManager.Roles.ToList();
 
-            if(rolesBD.Count == 0)
+            if (rolesBD.Count == 0)
             {
                 Role admin = new Role() { Id = Guid.NewGuid().ToString(), Name = "Admin", Descripcion = "Role de super usuario", Activo = true };
                 Role user = new Role() { Id = Guid.NewGuid().ToString(), Name = "User", Descripcion = "Role de usuario general", Activo = true };
@@ -179,21 +183,27 @@ namespace WebNutricion.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser
+                {
+                    UserName = model.Email,
+                    Email = model.Email,
+                    Nombre = model.Nombre.Trim(),
+                    Apellidos = model.Apellidos.Trim(),
+                    Telefono = model.Telefono.Trim(),
+                    Cedula = model.Cedula.Trim()
+                };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 IdentityResult resultRole = UserManager.AddToRole(user.Id,
                     RoleManager.Roles.Where(r => r.Id == model.Rol).FirstOrDefault().Name);
                 if (result.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
-                    // Para obtener más información sobre cómo habilitar la confirmación de cuentas y el restablecimiento de contraseña, visite https://go.microsoft.com/fwlink/?LinkID=320771
-                    // Enviar un correo electrónico con este vínculo
-                    // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    // await UserManager.SendEmailAsync(user.Id, "Confirmar la cuenta", "Para confirmar su cuenta, haga clic <a href=\"" + callbackUrl + "\">aquí</a>");
+                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
 
-                    return RedirectToAction("Index", "Home");
+                    // Obtener el ID del usuario recién registrado
+                    var userId = user.Id;
+
+                    // Redirigir a la acción Create de valoresNutricionaleController
+                    return RedirectToAction("Create", "valoresNutricionale", new { userId });
                 }
                 AddErrors(result);
             }
@@ -201,6 +211,7 @@ namespace WebNutricion.Controllers
             // Si llegamos a este punto, es que se ha producido un error y volvemos a mostrar el formulario
             return View(model);
         }
+
 
         //
         // GET: /Account/ConfirmEmail

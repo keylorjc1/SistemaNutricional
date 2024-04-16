@@ -1,0 +1,71 @@
+﻿@using Newtonsoft.Json
+
+
+@model Tuple<List<WebNutricion.Models.planificacionNutricional>>
+
+
+
+<div>
+@if (Model.Item1.Any())
+{
+    foreach (var item in Model.Item1)
+    {
+
+        <div class="col-xl-6 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <h4 class=" mb-4 text-black">Planificacion Nutricional:</h4>
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Peso : @item.peso
+                            </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Altura: @item.altura
+                            </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                IMC: @item.IMC
+                            </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Grasa Corporal: @item.grasacorporal
+                            </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Metabolismo Basal: @item.metabolismobasal
+                            </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Calorias Diarias: @item.caloriasdiarias
+                            </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Proteinas: @item.proteinas
+                            </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Carbohidratos: @item.carbohidratos
+                            </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Grasas: @item.grasas
+                            </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Objetivo: @item.objetivo
+                            </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Fecha: @item.fecha
+                            </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                IdUser: @item.idUser
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+}
+else
+{
+    <p>No se ha encontrado registro del progreso asociados a esta usuario.</p>
+}
+
+</div>

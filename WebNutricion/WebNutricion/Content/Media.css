@@ -1,0 +1,101 @@
+﻿/* Media queries para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Dos tarjetas por fila en dispositivos de pantalla pequeña */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%; /* Una tarjeta por fila en dispositivos móviles */
+    }
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px; /* Ancho total de todas las tarjetas más los espacios entre ellas */
+}
+
+.card {
+    width: 300px; /* Ancho de cada tarjeta */
+    height: 250px;
+    background-color: #000;
+    overflow: hidden;
+    margin: 0 10px; /* Espacio entre las tarjetas */
+    transition: transform 0.3s ease-in-out;
+}
+
+    .card img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform: scale(1.15);
+        transition: opacity 0.25s, transform 0.35s;
+    }
+
+    .card:hover img {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+
+.card-body {
+    position: absolute;
+    inset: 0;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    justify-content: center;
+}
+
+    .card-body::before {
+        content: '';
+        position: absolute;
+        inset: 20px;
+        border: 2px solid #fff;
+        opacity: 0;
+        transform: scale(1.25);
+        transition: opacity 0.25s, transform 0.25s;
+    }
+
+.card:hover .card-body::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card-title {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-description {
+    font-size: 14px;
+    opacity: 0;
+    transform: translate(-25px);
+    transition: opacity 0.25s, transform 0.25s;
+}
+
+.card:hover .card-description {
+    opacity: 1;
+    transform: translate(0);
+}
+
+#titulo {
+    font-size: 36px;
+    text-align: center;
+    color: #26798e;
+    transition: transform 0.5s ease-in-out;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Estilos específicos para la etiqueta <a> dentro de .card */
+.card a {
+    position: relative; /* Evita que el enlace se superponga sobre la imagen */
+}

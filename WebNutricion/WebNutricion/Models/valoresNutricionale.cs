@@ -9,13 +9,28 @@ namespace WebNutricion.Models
     public partial class valoresNutricionale
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int idValores { get; set; }
+
+        [StringLength(300)]
+        public string motivo { get; set; }
+
+        [StringLength(300)]
+        public string expectativas { get; set; }
 
         [StringLength(300)]
         public string informacionConsulta { get; set; }
 
         [StringLength(300)]
         public string historial { get; set; }
+
+        [StringLength(9)]
+        public string Cedula { get; set; }
+
+        public DateTime? fecha { get; set; }
+
+        [StringLength(128)]
+        public string idUser { get; set; }
+
+        public virtual AspNetUser AspNetUser { get; set; }
     }
 }

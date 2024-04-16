@@ -1,0 +1,126 @@
+﻿@using Newtonsoft.Json
+
+@model Tuple<WebNutricion.Models.planAlimentacion>
+
+@{
+    ViewBag.Title = "ShowAntropometricData";
+}
+
+@{
+    ViewBag.Title = "ValoresNutricionales y Planificación Nutricional";
+}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="~/WebStyle/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+    <link href="~/WebStyle/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<div class="row">
+
+
+
+
+
+    <div>
+        @{
+
+            var settings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+        }
+
+        @if (Model.Item1 != null)
+        {
+            {
+                var planAlimentacionData = Model.Item1; // Obtener el primer elemento de la lista
+
+                <div class="col-xl-12 col-md-12 mb-4">
+                    <div class="mask d-flex align-items-center h-100 mb-4">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <div class="card border-left-warning shadow h-100 py-2">
+                                        <div class="card-body">
+                                            <h4 class="mb-5 text-black text-center">Plan De Alimentación:</h4>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered mb-0" style="border-color: #57C09E;">
+                                                    <thead>
+                                                        <tr style="border-color: #57C09E;">
+                                                            <th scope="col" style="background-color: #57C09E; color: black; border-color: #57C09E;">Horario</th>
+                                                            <th scope="col" style="background-color: #57C09E; color: black; border-color: #57C09E;">Alimento</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">Comida</th>
+                                                            <td>@planAlimentacionData.desayuno</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">Almuerzo</th>
+                                                            <td>@planAlimentacionData.almuerzo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">Merienda</th>
+                                                            <td>@planAlimentacionData.merienda</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">Cena</th>
+                                                            <td>@planAlimentacionData.cena</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">IdUser</th>
+                                                            <td>@planAlimentacionData.idUser</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No se encontraron datos de planificación nutricional asociados a esta cédula.</p>
+        }
+    </div>
+    <div class="col-12">
+        <a href="@Url.Action("DownloadPDF", "User")" class="btn btn-primary mb-4" id="downloadPdfBtn">Descargar PDF</a>
+    </div>
+</div>
+
+
+<script>
+    var antropometricData = @Html.Raw(JsonConvert.SerializeObject(Model.Item1, settings));
+
+</script>
+
+<script src="~/WebStyle/vendor//jquery/jquery.min.js"></script>
+<script src="~/WebStyle/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    Core plugin JavaScript
+<script src="~/WebStyle/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    Custom scripts for all pages
+<script src="~/WebStyle/js/sb-admin-2.min.js"></script>
+
+    Page level plugins
+<script src="~/WebStyle/vendor/chart.js/Chart.min.js"></script>
+
+    Page level custom scripts
+<script src="~/WebStyle/js/demo/chart-area-demo.js"></script>
+<script src="~/WebStyle/js/demo/chart-pie-demo.js"></script>
+

@@ -10981,15 +10981,6 @@ p {
             }
 }
 
-.login-partial {
-    /* Estilos deseados */
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 0.95rem;
-    color: black;
-    font-weight: bold;
-    letter-spacing: 0.0625em;
-}
-
 header.masthead {
     padding-top: 10.5rem;
     padding-bottom: 6rem;

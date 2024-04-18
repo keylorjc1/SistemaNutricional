@@ -52,15 +52,6 @@ namespace WebNutricion.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (planificacionNutricional.peso != null && planificacionNutricional.altura != null)
-                {
-                    double pesoKg = (double)planificacionNutricional.peso;
-                    double alturaM = (double)planificacionNutricional.altura / 100; // Convertir altura a metros
-                    double IMC = pesoKg / (alturaM * alturaM);
-                    planificacionNutricional.IMC = (int)Math.Round(IMC); // Convertir a int
-                }
-
-
                 db.planificacionNutricionals.Add(planificacionNutricional);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -69,6 +60,7 @@ namespace WebNutricion.Controllers
             ViewBag.idUser = new SelectList(db.AspNetUsers, "Id", "Email", planificacionNutricional.idUser);
             return View(planificacionNutricional);
         }
+
 
         // GET: planificacionNutricional/Edit/5
         public ActionResult Edit(int? id)

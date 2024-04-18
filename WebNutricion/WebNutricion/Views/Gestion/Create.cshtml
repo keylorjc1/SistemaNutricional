@@ -99,7 +99,6 @@
     </form>
 
     <div id="resultado"></div>
-
     <script>
         function calcularCalorias() {
             var peso = parseFloat(document.getElementById("peso").value);
@@ -108,6 +107,17 @@
             var genero = document.getElementById("genero").value;
             var actividad = document.getElementById("actividad").value;
             var TMB;
+
+            // Calcular el IMC
+            var IMC = peso / Math.pow(altura / 100, 2);
+            // Redondear el IMC
+            var IMCRounded = Math.round(IMC);
+
+            // Actualizar campo IMC en el formulario
+            document.getElementById("PlanificacionNutricional_IMC").value = IMCRounded;
+            // Actualizar campos de peso y altura en el formulario
+            document.getElementById("PlanificacionNutricional_peso").value = peso;
+            document.getElementById("PlanificacionNutricional_altura").value = altura;
 
             if (genero === "hombre") {
                 TMB = (10 * peso) + (6.25 * altura) - (5 * edad) + 5;
@@ -143,9 +153,13 @@
             document.getElementById("PlanificacionNutricional_metabolismobasal").value = TMB.toFixed(0); // Redondear sin decimales
             document.getElementById("PlanificacionNutricional_caloriasdiarias").value = caloriasDiarias.toFixed(0); // Redondear sin decimal
 
-    document.getElementById("resultado").innerHTML = "Tu TMB es: " + TMB.toFixed(2) + " kcal <br>Tu necesidad calórica diaria es: " + caloriasDiarias.toFixed(2) + " kcal";
-}
+            document.getElementById("resultado").innerHTML = "Tu TMB es: " + TMB.toFixed(2) + " kcal <br>Tu necesidad calórica diaria es: " + caloriasDiarias.toFixed(2) + " kcal";
+        }
     </script>
+
+   
+    <!-- Resto del formulario -->
+
     <div class="form-group">
         @Html.LabelFor(model => model.PlanificacionNutricional.peso, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">

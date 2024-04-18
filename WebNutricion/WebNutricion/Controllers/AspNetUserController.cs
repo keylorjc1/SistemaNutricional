@@ -113,7 +113,6 @@ namespace WebNutricion.Controllers
             // Si hay un error en el modelo, volvemos a cargar la vista con los errores
             return View(valoresNutricionale);
         }
-        // GET: ShowAntropometricData/CreateNew
         // GET: ShowAntropometricData/CreateNew2
         public ActionResult CreateNew2(int peso, int altura, int IMC, int grasacorporal, int metabolismobasal, int caloriasdiarias, int proteinas, int carbohidratos, int grasas, string objetivo, DateTime fecha, string idUser)
         {

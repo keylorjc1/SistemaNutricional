@@ -3,10 +3,6 @@
 @using WebNutricion.Models
 @model LoginViewModel
 
-@{
-    Layout = null; // Esto elimina el diseño predeterminado
-}
-
 
 <!doctype html>
 <html lang="en">
@@ -55,13 +51,6 @@
                             </div>
                             <div class="form-group d-md-flex">
                                 <div class="w-50">
-
-                                    @*<label class="checkbox-wrap checkbox-primary">
-                                        Remember Me
-                                        <input type="checkbox" name="RememberMe" checked>
-                                        @Html.CheckBoxFor(m => m.RememberMe)
-                                        <span class="checkmark"></span>
-                                    </label>*@
                                 </div>
                             </div>
                         }
@@ -69,6 +58,7 @@
                         <p class="w-100 text-center">&mdash; &mdash;</p>
                         <div class="social d-flex text-center">
                             <a href="@Url.Action("Index", "Home")" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span> Regresar</a>
+                            <a href="@Url.Action("Index", "Home")" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span> Registrarse</a>
                         </div>
                     </div>
                 </div>

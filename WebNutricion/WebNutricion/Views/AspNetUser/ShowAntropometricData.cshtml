@@ -15,203 +15,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="~/WebStyle/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="~/WebStyleAspUser/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
-    <link href="~/WebStyle/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="~/WebStyleAspUser/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
-<div class="row">
-
-    <!-- Earnings (Monthly) Card Example -->
-    @if (Model.Item1 != null)
-    {
-
-        var valorNutricionalData = Model.Item1; // Obtener el primer elemento de la lista
-
-        <div>
-            @Html.ActionLink("Create New", "CreateNew", "AspNetUser", new { motivo = valorNutricionalData.motivo, expectativas = valorNutricionalData.expectativas, informacionConsulta = valorNutricionalData.informacionConsulta, historial = valorNutricionalData.historial, Cedula = valorNutricionalData.Cedula, fecha = valorNutricionalData.fecha, iduser = valorNutricionalData.idUser }, null)
-        </div>
-        <div class="col-xl-6 col-md-6 mb-4">
-            <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                    <h4 class="mb-5 text-black">Valores Nutricionales:</h4>
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                Motivo: @valorNutricionalData.motivo
-                            </div>
-                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                Expectativas: @valorNutricionalData.expectativas
-                            </div>
-                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                Información Consulta: @valorNutricionalData.informacionConsulta
-                            </div>
-                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                Historial: @valorNutricionalData.historial
-                            </div>
-                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                Historial: @valorNutricionalData.fecha
-                            </div>
-                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                IdUser: @valorNutricionalData.idUser
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+<style>
+    body {
+        background-image: url(/WebStyleAspUser/img/pexels-alesiakozik-8154201.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
-    }
-    else
-    {
-    <p>No se encontraron valores nutricionales asociados a esta usuario.</p>
-    }
+</style>
 
-    @if (Model.Item2 != null)
-    {
+<body>
+    <div style="margin-top: 150px;"></div>
 
-        var planificacionNutricionalData = Model.Item2; // Obtener el primer elemento de la lista
+    <div class="row">
 
-        <div>
-            @Html.ActionLink("Create New", "CreateNew2", "AspNetUser", new { peso = planificacionNutricionalData.peso, altura = planificacionNutricionalData.altura, IMC = planificacionNutricionalData.IMC, grasacorporal = planificacionNutricionalData.grasacorporal, metabolismobasal = planificacionNutricionalData.metabolismobasal, caloriasdiarias = planificacionNutricionalData.caloriasdiarias, proteinas = planificacionNutricionalData.proteinas, carbohidratos = planificacionNutricionalData.carbohidratos, grasas = planificacionNutricionalData.grasas, objetivo = planificacionNutricionalData.objetivo, fecha = planificacionNutricionalData.fecha, iduser = planificacionNutricionalData.idUser }, null)
-        </div>
-        <div class="col-xl-6 col-md-6 mb-4">
-            <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                    <h4 class=" mb-4 text-black">Planificacion Nutricional:</h4>
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Peso : @planificacionNutricionalData.peso
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Altura: @planificacionNutricionalData.altura
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                IMC: @planificacionNutricionalData.IMC
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Grasa Corporal: @planificacionNutricionalData.grasacorporal
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Metabolismo Basal: @planificacionNutricionalData.metabolismobasal
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Calorias Diarias: @planificacionNutricionalData.caloriasdiarias
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Proteinas: @planificacionNutricionalData.proteinas
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Carbohidratos: @planificacionNutricionalData.carbohidratos
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Grasas: @planificacionNutricionalData.grasas
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Objetivo: @planificacionNutricionalData.objetivo
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Fecha: @planificacionNutricionalData.fecha
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                IdUser: @planificacionNutricionalData.idUser
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    }
-    }
-    else
-    {
-    <p>No se encontraron datos nutricionales asociados a esta cédula.</p>
-    }
-
-</div>
-
-
-
-<div>
-    @{
-
-        var settings = new JsonSerializerSettings
+        <!-- Valores Nutricionales -->
+        @if (Model.Item1 != null)
         {
-            ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-        };
-    }
+            var valorNutricionalData = Model.Item1;
 
-    @if (Model.Item3 != null)
-    {
-        {
-            var planAlimentacionData = Model.Item3; // Obtener el primer elemento de la lista
-
-            <div>
-                @Html.ActionLink("Create New", "CreateNew3", "AspNetUser", new { desayuno = planAlimentacionData.desayuno, almuerzo = planAlimentacionData.almuerzo, merienda = planAlimentacionData.merienda, cena = planAlimentacionData.cena, calorias = planAlimentacionData.calorias, fecha = planAlimentacionData.fecha, iduser = planAlimentacionData.idUser }, null)
-            </div>
-            <div class="col-xl-12 col-md-12 mb-4">
-                <div class="mask d-flex align-items-center h-100 mb-4">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-12">
-                                <div class="card border-left-warning shadow h-100 py-2">
-                                    <div class="card-body">
-                                        <h4 class="mb-5 text-black text-center">Plan De Alimentación:</h4>
-                                        <div class="table-responsive">
-                                            <table class="table table-bordered mb-0" style="border-color: #57C09E;">
-                                                <thead>
-                                                    <tr style="border-color: #57C09E;">
-                                                        <th scope="col" style="background-color: #57C09E; color: black; border-color: #57C09E;">Horario</th>
-                                                        <th scope="col" style="background-color: #57C09E; color: black; border-color: #57C09E;">Alimento</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">Comida</th>
-                                                        <td>@planAlimentacionData.desayuno</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">Almuerzo</th>
-                                                        <td>@planAlimentacionData.almuerzo</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">Merienda</th>
-                                                        <td>@planAlimentacionData.merienda</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">Cena</th>
-                                                        <td>@planAlimentacionData.cena</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">IdUser</th>
-                                                        <td>@planAlimentacionData.idUser</td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
+            <div class="col-xl-6 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <h4 class="mb-4 style="color: #26798e;">Valores Nutricionales:</h4>
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Motivo: @valorNutricionalData.motivo
+                                </div>
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Expectativas: @valorNutricionalData.expectativas
+                                </div>
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Información Consulta: @valorNutricionalData.informacionConsulta
+                                </div>
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Historial: @valorNutricionalData.historial
+                                </div>
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Fecha: @valorNutricionalData.fecha
+                                </div>
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    IdUser: @valorNutricionalData.idUser
                                 </div>
                             </div>
+                        </div>
+                        <div class="mt-4">
+                            @Html.ActionLink("Create New", "CreateNew", "AspNetUser", new { motivo = valorNutricionalData.motivo, expectativas = valorNutricionalData.expectativas, informacionConsulta = valorNutricionalData.informacionConsulta, historial = valorNutricionalData.historial, Cedula = valorNutricionalData.Cedula, fecha = valorNutricionalData.fecha, iduser = valorNutricionalData.idUser }, new { @class = "btn btn-primary", style = "background-color: #26798e; border-color: #26798e;" })
                         </div>
                     </div>
                 </div>
             </div>
         }
-    }
-    else
-    {
-        <p>No se encontraron datos de planificación nutricional asociados a esta cédula.</p>
-    }
-</div>
+        else
+        {
+            <p>No se encontraron valores nutricionales asociados a este usuario.</p>
+        }
+
+        <!-- Planificacion Nutricional -->
+        @if (Model.Item2 != null)
+        {
+            var planificacionNutricionalData = Model.Item2;
+
+            <div class="col-xl-6 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <h4 class="mb-4 style="color: #26798e;">Planificación Nutricional:</h4>
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Peso: @planificacionNutricionalData.peso
+                                </div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Altura: @planificacionNutricionalData.altura
+                                </div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    IMC: @planificacionNutricionalData.IMC
+                                </div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Grasa Corporal: @planificacionNutricionalData.grasacorporal
+                                </div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Metabolismo Basal: @planificacionNutricionalData.metabolismobasal
+                                </div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Calorías Diarias: @planificacionNutricionalData.caloriasdiarias
+                                </div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Proteínas: @planificacionNutricionalData.proteinas
+                                </div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Carbohidratos: @planificacionNutricionalData.carbohidratos
+                                </div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Grasas: @planificacionNutricionalData.grasas
+                                </div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Objetivo: @planificacionNutricionalData.objetivo
+                                </div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    Fecha: @planificacionNutricionalData.fecha
+                                </div>
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    IdUser: @planificacionNutricionalData.idUser
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            @Html.ActionLink("Create New", "CreateNew2", "AspNetUser", new { peso = planificacionNutricionalData.peso, altura = planificacionNutricionalData.altura, IMC = planificacionNutricionalData.IMC, grasacorporal = planificacionNutricionalData.grasacorporal, metabolismobasal = planificacionNutricionalData.metabolismobasal, caloriasdiarias = planificacionNutricionalData.caloriasdiarias, proteinas = planificacionNutricionalData.proteinas, carbohidratos = planificacionNutricionalData.carbohidratos, grasas = planificacionNutricionalData.grasas, objetivo = planificacionNutricionalData.objetivo, fecha = planificacionNutricionalData.fecha, iduser = planificacionNutricionalData.idUser }, new { @class = "btn btn-primary", style = "background-color: #26798e; border-color: #26798e;" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <p>No se encontraron datos nutricionales asociados a esta cédula.</p>
+        }
+
+    </div>
+
+
+
+
+    <div>
+        @{
+
+            var settings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+        }
+
+        @if (Model.Item3 != null)
+        {
+            {
+                var planAlimentacionData = Model.Item3; // Obtener el primer elemento de la lista
+
+                <div class="row">
+                    <section class="intro">
+                        <div class="gradient-custom-2 h-100">
+                            <div class="mask d-flex align-items-center h-100 mb-4">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered mb-0" style="border-color: #57C09E;">
+                                                    <thead>
+                                                        <tr style="border-color: #57C09E;">
+                                                            <th scope="col" style="background-color: #57C09E; color: black; border-color: #57C09E;">Horario</th>
+                                                            <th scope="col" style="background-color: #57C09E; color: black; border-color: #57C09E;">Alimento</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr style="background-color: white;">
+                                                            <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">Comida</th>
+                                                            <td>@planAlimentacionData.desayuno</td>
+                                                        </tr>
+                                                        <tr style="background-color: white;">
+                                                            <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">Almuerzo</th>
+                                                            <td>@planAlimentacionData.almuerzo</td>
+                                                        </tr>
+                                                        <tr style="background-color: white;">
+                                                            <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">Merienda</th>
+                                                            <td>@planAlimentacionData.merienda</td>
+                                                        </tr>
+                                                        <tr style="background-color: white;">
+                                                            <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">Cena</th>
+                                                            <td>@planAlimentacionData.cena</td>
+                                                        </tr>
+                                                        <tr style="background-color: white;">
+                                                            <th scope="row" style="background-color: #57C09E; color: black; border-color: #57C09E;">IdUser</th>
+                                                            <td>@planAlimentacionData.idUser</td>
+                                                        </tr>
+                                                        <tr style="background-color: #57C09E; color: black; border-color: #57C09E;">
+                                                            <td colspan="2">
+                                                                <div class="text-center">
+                                                                    @Html.ActionLink("Create New", "CreateNew3", "AspNetUser", new { desayuno = planAlimentacionData.desayuno, almuerzo = planAlimentacionData.almuerzo, merienda = planAlimentacionData.merienda, cena = planAlimentacionData.cena, calorias = planAlimentacionData.calorias, fecha = planAlimentacionData.fecha, iduser = planAlimentacionData.idUser }, new { @class = "btn btn-primary", style = "background-color: #26798e; border-color: #26798e;" })
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center mt-3">
+                                <div class="col-md-6">
+                                    <!-- Cambié col-auto por col-md-6 para extender el botón -->
+                                    <a href="@Url.Action("index", "AspNetUser")" class="btn btn-lg btn-primary btn-block" style="background-color: #26798e; border-color: #26798e;">Regresar</a>
+                                </div>
+
+                            </div>
+                     </section>
+
+                </div>
+            }
+        }
+        else
+        {
+            <p>No se encontraron datos de planificación nutricional asociados a esta cédula.</p>
+        }
+    </div>
+
+</body>
 
 
 
@@ -221,18 +237,14 @@
     var planificacionNutricionalData = @Html.Raw(JsonConvert.SerializeObject(Model.Item3, settings));
 </script>
 
-<script src="~/WebStyle/vendor//jquery/jquery.min.js"></script>
-<script src="~/WebStyle/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/WebStyleAspUser/vendor//jquery/jquery.min.js"></script>
+<script src="~/WebStyleAspUser/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    Core plugin JavaScript
-<script src="~/WebStyle/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="~/WebStyleAspUser/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    Custom scripts for all pages
-<script src="~/WebStyle/js/sb-admin-2.min.js"></script>
+<script src="~/WebStyleAspUser/js/sb-admin-2.min.js"></script>
 
-    Page level plugins
 <script src="~/WebStyle/vendor/chart.js/Chart.min.js"></script>
 
-    Page level custom scripts
-<script src="~/WebStyle/js/demo/chart-area-demo.js"></script>
-<script src="~/WebStyle/js/demo/chart-pie-demo.js"></script>
+<script src="~/WebStyleAspUser/js/demo/chart-area-demo.js"></script>
+<script src="~/WebStyleAspUser/js/demo/chart-pie-demo.js"></script>

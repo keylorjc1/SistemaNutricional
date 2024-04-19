@@ -3,69 +3,123 @@
 
 @model Tuple<List<WebNutricion.Models.planificacionNutricional>>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="~/WebStyleAspUser/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+    <link href="~/WebStyleAspUser/css/sb-admin-2.min.css" rel="stylesheet">
 
+</head>
 
+<style>
+    /* Estilos personalizados */
+    .heading-section {
+        color: #26798e; /* Color azul */
+        text-align: center;
+    }
+
+        .heading-section h2 {
+            margin-top: 5px; /* Margen superior */
+        }
+
+        .heading-section h3 {
+            margin-top: 5px; /* Margen superior */
+        }
+
+    .border-left-plan {
+        border-left: 0.25rem solid #26798e !important;
+    }
+
+    body {
+        background-image: url(/WebStyleAspUser/img/pexels-goumbik-1410138.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+</style>
+
+<div style="margin-top: 150px;"></div>
+<div class=" text-center mb-5">
+    <h2 class="heading-section mt-5">NUTRICIÓN MANUEL SANABRIA</h2>
+    <h3 class="heading-section mt-5">A continuación te mostramos tu planificación nutricional</h3>
+</div>
 <div>
-@if (Model.Item1.Any())
-{
-    foreach (var item in Model.Item1)
-    {
+    <div>
 
-        <div class="col-xl-6 col-md-6 mb-4">
-            <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                    <h4 class=" mb-4 text-black">Planificacion Nutricional:</h4>
-                    <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Peso : @item.peso
+        @if (Model.Item1.Any())
+        {
+            foreach (var item in Model.Item1)
+            {
+
+                <div class="col-xl-6 col-md-6 mb-4">
+                    <div class="card border-left-plan shadow h-100 py-2">
+                        <div class="card-body">
+                            <h4 class=" mb-4 style="color: #26798e;">Planificacion Nutricional:</h4>
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-uppercase mb-1" style="font-size: 14px; color: #26798e;">
+                                        Peso : @item.peso
+                                    </div>
+                                    <div class="text-uppercase mb-1" style="font-size: 14px; color: #26798e;">
+                                        Altura: @item.altura
+                                    </div>
+                                    <div class="text-uppercase mb-1" style="font-size: 14px; color: #26798e;">
+                                        IMC: @item.IMC
+                                    </div>
+                                    <div class="text-uppercase mb-1" style="font-size: 14px; color: #26798e;">
+                                        Grasa Corporal: @item.grasacorporal
+                                    </div>
+                                    <div class="text-uppercase mb-1" style="font-size: 14px; color: #26798e;">
+                                        Metabolismo Basal: @item.metabolismobasal
+                                    </div>
+                                    <div class="text-uppercase mb-1" style="font-size: 14px; color: #26798e;">
+                                        Calorias Diarias: @item.caloriasdiarias
+                                    </div>
+                                    <div class="text-uppercase mb-1" style="font-size: 14px; color: #26798e;">
+                                        Proteinas: @item.proteinas
+                                    </div>
+                                    <div class="text-uppercase mb-1" style="font-size: 14px; color: #26798e;">
+                                        Carbohidratos: @item.carbohidratos
+                                    </div>
+                                    <div class="text-uppercase mb-1" style="font-size: 14px; color: #26798e;">
+                                        Grasas: @item.grasas
+                                    </div>
+                                    <div class="text-uppercase mb-1" style="font-size: 14px; color: #26798e;">
+                                        Objetivo: @item.objetivo
+                                    </div>
+                                    <div class="text-uppercase mb-1" style="font-size: 14px; color: #26798e;">
+                                        Fecha: @item.fecha
+                                    </div>
+                                    <div class="text-uppercase mb-1" style="font-size: 14px; color: #26798e;">
+                                        IdUser: @item.idUser
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Altura: @item.altura
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                IMC: @item.IMC
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Grasa Corporal: @item.grasacorporal
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Metabolismo Basal: @item.metabolismobasal
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Calorias Diarias: @item.caloriasdiarias
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Proteinas: @item.proteinas
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Carbohidratos: @item.carbohidratos
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Grasas: @item.grasas
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Objetivo: @item.objetivo
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Fecha: @item.fecha
-                            </div>
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                IdUser: @item.idUser
+                            <div>
                             </div>
                         </div>
                     </div>
-                    <div>
-                    </div>
                 </div>
-            </div>
-        </div>
 
-    }
-}
-else
-{
-    <p>No se ha encontrado registro del progreso asociados a esta usuario.</p>
-}
+            }
+        }
+        else
+        {
+            <p>No se ha encontrado registro del progreso asociados a esta usuario.</p>
+        }
 
-</div>
+    </div>
+
+    <script src="~/WebStyleAspUser/vendor//jquery/jquery.min.js"></script>
+    <script src="~/WebStyleAspUser/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/WebStyleAspUser/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/WebStyleAspUser/js/sb-admin-2.min.js"></script>
+    <script src="~/WebStyleAspUser/vendor/chart.js/Chart.min.js"></script>
+    <script src="~/WebStyleAspUser/js/demo/chart-area-demo.js"></script>
+    <script src="~/WebStyleAspUser/js/demo/chart-pie-demo.js"></script>

@@ -3,83 +3,173 @@
 @{
     ViewBag.Title = "Create";
 }
+<body>
+    <div class="container">
+       
+            <div style="margin-top: 100px;"></div>
+            <header>
+                <h1>Editar Alimentación</h1>
+            </header>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
 
-<h2>Create</h2>
+    <div class="form-horizontal">
+        <h4>Plan de Alimentacion</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <text>Desayuno</text>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.desayuno, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.desayuno, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
 
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
+        <div class="form-group">
+            <text>Almuerzo</text>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.almuerzo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.almuerzo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
 
-<div class="form-horizontal">
-    <h4>planAlimentacion</h4>
-    <hr />
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    <div class="form-group">
-        @Html.LabelFor(model => model.desayuno, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.desayuno, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.desayuno, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <text>Merienda</text>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.merienda, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.merienda, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
+
+        <div class="form-group">
+            <text>Cena</text>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.cena, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.cena, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
+
+        <div class="form-group">
+            <text>Calorias</text>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.calorias, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.calorias, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
+
+
+
+        <div class="form-group">
+            <text>Fecha</text>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.fecha, new { htmlAttributes = new { @class = "form-control", @Value = DateTime.Now.ToShortDateString() } })
+                @Html.ValidationMessageFor(model => model.fecha, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            @Html.LabelFor(model => model.idUser, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.idUser, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.idUser, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <br />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-lg btn-primary btn-block" style="background-color: #26798e; border-color: #26798e;" />
+            </div>
         </div>
     </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.almuerzo, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.almuerzo, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.almuerzo, "", new { @class = "text-danger" })
-        </div>
+            }
     </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.merienda, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.merienda, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.merienda, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.cena, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.cena, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.cena, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.calorias, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.calorias, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.calorias, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
+</body>
    
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.fecha, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.fecha, new { htmlAttributes = new { @class = "form-control", @Value = DateTime.Now.ToShortDateString() } })
-            @Html.ValidationMessageFor(model => model.fecha, "", new { @class = "text-danger" })
-        </div>
-    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.idUser, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.idUser, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.idUser, "", new { @class = "text-danger" })
-        </div>
-    </div>
 
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Create" class="btn btn-default" />
-        </div>
-    </div>
-</div>
-}
+    <style>
+        body {
+            background-image: url('../../webstylemain/assets/img/logos/nutricion-activa.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+        h1 {
+            font-size: 3em;
+            font-weight: 300;
+            line-height: 1em;
+            text-align: center;
+            color: #26798E;
+            margin-bottom: 40px;
+        }
+
+        .container th h1 {
+            font-weight: bold;
+            font-size: 1em;
+            text-align: left;
+            color: #26798E;
+        }
+
+        /*    .container td {
+            font-weight: normal;
+            font-size: 1em;
+            -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+            -moz-box-shadow: 0 2px 2px -2px #0E1119;
+            box-shadow: 0 2px 2px -2px #0E1119;
+        }*/
+
+
+
+        .container td, .container th {
+            padding-bottom: 2%;
+            padding-top: 2%;
+            padding-left: 2%;
+        }
+
+        /* Background-color of the odd rows */
+        .container tr:nth-child(odd) {
+            background-color: #26798E;
+        }
+
+        /* Background-color of the even rows */
+        .container tr:nth-child(even) {
+            background-color: #26798E;
+        }
+
+        .container th {
+            background-color: #63caa7;
+        }
+
+        .container td:first-child {
+            color: black;
+        }
+
+        .container tr:hover {
+            background-color: #63caa7;
+            -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+            -moz-box-shadow: 0 6px 6px -6px #0E1119;
+            box-shadow: 0 6px 6px -6px #0E1119;
+        }
+
+        .container td:hover {
+            background-color: #FFC172;
+            color: #403E10;
+            font-weight: bold;
+            box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+            transform: translate3d(6px, -6px, 0);
+            transition-delay: 0s;
+            transition-duration: 0.4s;
+            transition-property: all;
+            transition-timing-function: line;
+        }
+    </style>

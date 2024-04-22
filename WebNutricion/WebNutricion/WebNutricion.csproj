@@ -91,6 +91,12 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Configuration.ConfigurationBuilders.Base, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Configuration.ConfigurationBuilders.Base.2.0.0\lib\Net471\Microsoft.Configuration.ConfigurationBuilders.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Configuration.ConfigurationBuilders.UserSecrets, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.2.0.0\lib\Net471\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Extensions.DependencyInjection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
@@ -256,7 +262,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminstradorController.cs" />
     <Compile Include="Controllers\AspNetUserController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -2060,6 +2066,7 @@
     <Content Include="WebStyleMain\RegisterForm\js\main.js" />
     <Content Include="WebStyleMain\RegisterForm\js\owl.carousel.min.js" />
     <Content Include="WebStyleMain\RegisterForm\js\popper.min.js" />
+    <None Include="Properties\PublishProfiles\ConsultorioManuelSanabria - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -3805,7 +3812,6 @@
     <Content Include="Views\Gestion\Create.cshtml" />
     <Content Include="Views\Gestion\Index.cshtml" />
     <Content Include="Views\AspNetUser\ShowAntropometricData.cshtml" />
-    <Content Include="Views\Gestion\CreateNew.cshtml" />
     <Content Include="Views\AspNetUser\CreateNew2.cshtml" />
     <Content Include="Views\AspNetUser\CreateNew3.cshtml" />
     <Content Include="Views\AspNetUser\Progress.cshtml" />
@@ -4330,10 +4336,10 @@
     <Content Include="WebStyleAspUser\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="WebStyleAspUser\vendor\jquery\jquery.min.map" />
     <Content Include="WebStyleAspUser\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Views\Adminstrador\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

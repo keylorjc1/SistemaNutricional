@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Reddit+Mono:wght@200..900&family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Javascript Swipe Cards</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <style>
+    </style>
+    @Styles.Render("~/Content/Media.css")
+
+</head>
+<body>
+    <style>
+        .invisible-hr {
+            border: none;
+            height: 1px;
+            background-color: transparent;
+            margin: 10px 0;
+        }
+    </style>
+    <hr class="invisible-hr">
+    <hr class="invisible-hr">
+    <hr class="invisible-hr">
+    <hr class="invisible-hr">
+    <hr class="invisible-hr">
+    <hr class="invisible-hr">
+    <hr class="invisible-hr">
+    <hr class="invisible-hr">
+    <h1 id="titulo">Panel de administracion</h1>
+
+    <script>
+        // Obtener el elemento h1
+        const titulo = document.getElementById('titulo');
+
+        // Función para aplicar el efecto de zoom
+        function hacerZoom() {
+            // Alternar entre zoom-in y zoom-out
+            if (titulo.style.transform === 'scale(1)') {
+                titulo.style.transform = 'scale(1.2)';
+            } else {
+                titulo.style.transform = 'scale(1)';
+            }
+        }
+
+        // Llamar a la función cada segundo
+        setInterval(hacerZoom, 1000);
+    </script>
+    <hr />
+
+    <div class="card-container">
+
+        <a href="@Url.Action("Register", "Account")" class="card">
+            <figure>
+                <img src="https://images.ctfassets.net/63bmaubptoky/njCWUHVHZYRZNIOQMSwx9I5NLWNw8KQu1_Ne-ZEgd0s/5c370fd12e2e36c6379cbab073f93a31/Que-es-la-telemedicina.png" alt="..." style="position:absolute">
+                <figcaption class="card-body">
+                    <h2 class="card-title">Nueva Consulta</h2>
+                    <p class="card-description">Registra datos de un nuevo cliente</p>
+                </figcaption>
+            </figure>
+        </a>
+
+        <a href="@Url.Action("Index", "AspNetUser")" class="card">
+            <figure>
+                <img src="https://assets1.farmaciasanpablo.com.mx/landings/_blog/consultorio/consulta-nutricional-para-que-sirve.jpg" alt="..." style="position:absolute">
+                <figcaption class="card-body">
+                    <h2 class="card-title">Administrar Clientes</h2>
+                    <p class="card-description">Gestiona los datos de tus clientes</p>
+                </figcaption>
+            </figure>
+        </a>
+
+
+
+    </div>
+
+</body>
+</html>

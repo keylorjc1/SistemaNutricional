@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=DESKTOP-8GI0STB\SQLEXPRESS;Initial Catalog=SistemaWebNutricional_;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="Nutricion-Web.config Connection String" description="Nutricion Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="data source=DESKTOP-8GI0STB\SQLEXPRESS;initial catalog=SistemaWebNutricional_;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Nutricion']/@connectionString" />
+  </parameter>
+  <parameter name="RegistroCompletoViewModel-Web.config Connection String" description="RegistroCompletoViewModel Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="data source=(LocalDb)\MSSQLLocalDB;initial catalog=WebNutricion.Models.RegistroCompletoViewModel;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='RegistroCompletoViewModel']/@connectionString" />
+  </parameter>
+</parameters>

@@ -6,31 +6,27 @@ using System.Web.Mvc;
 
 namespace WebNutricion.Controllers
 {
-    public class AdminController : Controller
+    public class AdminstradorController : Controller
     {
-        [Authorize(Roles = "Admin")]
+        // GET: Adminstrador
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: Admin/Details/5
-        [Authorize(Roles = "Admin")]
-
+        // GET: Adminstrador/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: Admin/Create
-        [Authorize(Roles = "Admin")]
-
+        // GET: Adminstrador/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Admin/Create
+        // POST: Adminstrador/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -46,13 +42,13 @@ namespace WebNutricion.Controllers
             }
         }
 
-        // GET: Admin/Edit/5
+        // GET: Adminstrador/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Admin/Edit/5
+        // POST: Adminstrador/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -68,13 +64,13 @@ namespace WebNutricion.Controllers
             }
         }
 
-        // GET: Admin/Delete/5
+        // GET: Adminstrador/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Admin/Delete/5
+        // POST: Adminstrador/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

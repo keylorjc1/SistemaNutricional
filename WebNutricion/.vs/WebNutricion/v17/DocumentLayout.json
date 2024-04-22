@@ -1,182 +1,188 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\",
+  "WorkspaceRootPath": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\aspnetuser\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\aspnetuser\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\controllers\\aspnetusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\aspnetusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\controllers\\gestioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\gestioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\gestion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\gestion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\gestion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\aspnetuser\\createnew3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\aspnetuser\\createnew3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\aspnetuser\\createnew3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\aspnetuser\\createnew2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\aspnetuser\\createnew2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\aspnetuser\\createnew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\aspnetuser\\createnew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\aspnetuser\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\aspnetuser\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\gestion\\createnew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\gestion\\createnew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|c:\\users\\saulp\\downloads\\nuevotry\\nuevotry\\registertest\\sistemanutricional-main\\webnutricion\\webnutricion\\views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|c:\\users\\saulp\\downloads\\nuevotry\\nuevotry\\registertest\\sistemanutricional-main\\webnutricion\\webnutricion\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\models\\aspnetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\aspnetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\models\\manageviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\manageviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|c:\\users\\saulp\\downloads\\nuevotry\\nuevotry\\registertest\\sistemanutricional-main\\webnutricion\\webnutricion\\views\\user\\showprogress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\user\\showprogress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\aspnetuser\\progress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\aspnetuser\\progress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|c:\\users\\saulp\\downloads\\nuevotry\\nuevotry\\registertest\\sistemanutricional-main\\webnutricion\\webnutricion\\views\\user\\showdiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\user\\showdiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\controllers\\planificacionnutricionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\planificacionnutricionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\aspnetuser\\createnew2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\aspnetuser\\createnew2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\models\\planalimentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\planalimentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\models\\gestionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\gestionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\aspnetuser\\showantropometricdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\aspnetuser\\showantropometricdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\models\\planificacionnutricional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\planificacionnutricional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|c:\\users\\saul\\onedrive\\escritorio\\sistemanutricional\\webnutricion\\webnutricion\\views\\aspnetuser\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\aspnetuser\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\gestion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\gestion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\gestion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\planalimentacion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\aspnetuser\\createnew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\aspnetuser\\createnew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|c:\\users\\saul\\onedrive\\escritorio\\sistemanutricional\\webnutricion\\webnutricion\\views\\adminstrador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\adminstrador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\user\\showprogress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\user\\showprogress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\user\\showdiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\user\\showdiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\aspnetuser\\progress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\aspnetuser\\progress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\aspnetuser\\showantropometricdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\aspnetuser\\showantropometricdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|c:\\users\\saul\\onedrive\\escritorio\\sistemanutricional\\webnutricion\\webnutricion\\controllers\\adminstradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\adminstradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|c:\\users\\saul\\onedrive\\escritorio\\sistemanutricional\\webnutricion\\webnutricion\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\controllers\\aspnetusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\aspnetusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\controllers\\gestioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\gestioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\models\\aspnetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\aspnetuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\models\\manageviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\manageviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\controllers\\planificacionnutricionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\planificacionnutricionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\models\\planalimentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\planalimentacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\models\\gestionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\gestionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\models\\planificacionnutricional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\planificacionnutricional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\planalimentacion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\planalimentacion\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\controllers\\planalimentacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\controllers\\planalimentacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\planalimentacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\planificacionnutricional\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\planificacionnutricional\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\planificacionnutricional\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\controllers\\valoresnutricionalecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\controllers\\valoresnutricionalecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\controllers\\valoresnutricionalecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\models\\valoresnutricionale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\models\\valoresnutricionale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\valoresnutricionale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\valoresnutricionale\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\valoresnutricionale\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\valoresnutricionale\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\valoresnutricionale\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\valoresnutricionale\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\valoresnutricionale\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\planificacionnutricional\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\planificacionnutricional\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\planificacionnutricional\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\views\\planificacionnutricional\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\views\\planificacionnutricional\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\views\\planificacionnutricional\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\models\\nutricion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\models\\nutricion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\nutricion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\webnutricion\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\webnutricion\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C3E6E21-E2FD-4619-B66C-786B765FBC15}|WebNutricion\\WebNutricion.csproj|solutionrelative:webnutricion\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Gestion\\CreateNew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -186,392 +192,120 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 14,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateNew2.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\CreateNew2.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\AspNetUser\\CreateNew2.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\CreateNew2.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\AspNetUser\\CreateNew2.cshtml",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAiwFkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T01:37:52.674Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:296:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "CreateNew3.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\CreateNew3.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\CreateNew3.cshtml",
               "RelativeDocumentMoniker": "WebNutricion\\Views\\AspNetUser\\CreateNew3.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\CreateNew3.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\CreateNew3.cshtml",
               "RelativeToolTip": "WebNutricion\\Views\\AspNetUser\\CreateNew3.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABIAAAAfAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAwK0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-15T03:22:53.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\AspNetUser\\Index.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Index.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\AspNetUser\\Index.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAC4AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T04:10:57.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Gestion\\Create.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\Gestion\\Create.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Gestion\\Create.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\Gestion\\Create.cshtml",
-              "ViewState": "AQIAAPIAAAAAAAAAAAAAAJMAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-12T19:58:00.243Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GestionController.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\GestionController.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\GestionController.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\GestionController.cs",
-              "RelativeToolTip": "WebNutricion\\Controllers\\GestionController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T09:00:13.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AspNetUserController.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\AspNetUserController.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\AspNetUserController.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\AspNetUserController.cs",
-              "RelativeToolTip": "WebNutricion\\Controllers\\AspNetUserController.cs",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAkwBIAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T01:39:54.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateNew.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\CreateNew.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\AspNetUser\\CreateNew.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\CreateNew.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\AspNetUser\\CreateNew.cshtml",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAADwAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T18:12:20.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Create.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\AspNetUser\\Create.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Create.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\AspNetUser\\Create.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAJsAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T18:47:27.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateNew.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Gestion\\CreateNew.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\Gestion\\CreateNew.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Gestion\\CreateNew.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\Gestion\\CreateNew.cshtml",
-              "ViewState": "AQIAAHYAAAAAAAAAAAAuwJMAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T18:09:39.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Manage\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\Manage\\Index.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Manage\\Index.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\Manage\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-16T01:42:41.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "ManageController.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\ManageController.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\ManageController.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\ManageController.cs",
-              "RelativeToolTip": "WebNutricion\\Controllers\\ManageController.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAD4v08AAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T01:42:27.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AspNetUser.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\AspNetUser.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Models\\AspNetUser.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\AspNetUser.cs",
-              "RelativeToolTip": "WebNutricion\\Models\\AspNetUser.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAA1wEEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T03:30:03.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\User\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\User\\Index.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\User\\Index.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\User\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T15:40:55.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ManageViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\ManageViewModels.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Models\\ManageViewModels.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\ManageViewModels.cs",
-              "RelativeToolTip": "WebNutricion\\Models\\ManageViewModels.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T14:23:00.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "ShowDiet.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\User\\ShowDiet.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\User\\ShowDiet.cshtml",
               "RelativeDocumentMoniker": "WebNutricion\\Views\\User\\ShowDiet.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\User\\ShowDiet.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\User\\ShowDiet.cshtml",
               "RelativeToolTip": "WebNutricion\\Views\\User\\ShowDiet.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAxAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAAIAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-15T16:10:48.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAKwAAAAAAAAAAAAewLMAAAAOAAAA",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Adminstrador\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\Adminstrador\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Adminstrador\\Index.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\Adminstrador\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T15:43:22.591Z",
+              "WhenOpened": "2024-04-22T16:57:35.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\UserController.cs",
-              "RelativeToolTip": "WebNutricion\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEcAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T15:26:54.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ShowProgress.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\User\\ShowProgress.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\User\\ShowProgress.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\User\\ShowProgress.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\User\\ShowProgress.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABOAAAA",
+              "DocumentIndex": 3,
+              "Title": "CreateNew2.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\CreateNew2.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\AspNetUser\\CreateNew2.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\CreateNew2.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\AspNetUser\\CreateNew2.cshtml",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-16T01:38:16.439Z",
+              "WhenOpened": "2024-04-15T01:37:52.674Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Progress.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Progress.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\AspNetUser\\Progress.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Progress.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\AspNetUser\\Progress.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAAGAAAA",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Gestion\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\Gestion\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Gestion\\Create.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\Gestion\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T13:33:39.836Z",
+              "WhenOpened": "2024-04-12T19:58:00.243Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "planificacionNutricionalController.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\planificacionNutricionalController.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\planificacionNutricionalController.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\planificacionNutricionalController.cs",
-              "RelativeToolTip": "WebNutricion\\Controllers\\planificacionNutricionalController.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAgwD0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T19:04:56.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "GestionModel.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\GestionModel.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Models\\GestionModel.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\GestionModel.cs",
-              "RelativeToolTip": "WebNutricion\\Models\\GestionModel.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAD4vw8AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T08:55:13.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "planAlimentacion.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\planAlimentacion.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Models\\planAlimentacion.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\planAlimentacion.cs",
-              "RelativeToolTip": "WebNutricion\\Models\\planAlimentacion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T08:56:15.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ShowAntropometricData.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\ShowAntropometricData.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\AspNetUser\\ShowAntropometricData.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\ShowAntropometricData.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\AspNetUser\\ShowAntropometricData.cshtml",
-              "ViewState": "AQIAANIAAAAAAAAAAAAAwO4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T03:34:17.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAABcAAABfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T15:59:27.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T15:42:21.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T15:42:18.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "WebNutricion\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAKcAAAAAAAAAAAAUwAoAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T08:59:32.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "planificacionNutricional.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\planificacionNutricional.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Models\\planificacionNutricional.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\planificacionNutricional.cs",
-              "RelativeToolTip": "WebNutricion\\Models\\planificacionNutricional.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAhwBAAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T08:36:30.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-11T09:01:24.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Gestion\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Gestion\\Index.cshtml",
               "RelativeDocumentMoniker": "WebNutricion\\Views\\Gestion\\Index.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Gestion\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Gestion\\Index.cshtml",
               "RelativeToolTip": "WebNutricion\\Views\\Gestion\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -580,102 +314,420 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\planAlimentacion\\Create.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\planAlimentacion\\Create.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\planAlimentacion\\Create.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\planAlimentacion\\Create.cshtml",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAgwFsAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\AspNetUser\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Index.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\AspNetUser\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-11T09:09:27.874Z",
+              "WhenOpened": "2024-04-14T04:10:57.078Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAE4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T09:01:24.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ShowAntropometricData.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\ShowAntropometricData.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\AspNetUser\\ShowAntropometricData.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\ShowAntropometricData.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\AspNetUser\\ShowAntropometricData.cshtml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAO4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T03:34:17.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Progress.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Progress.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\AspNetUser\\Progress.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Progress.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\AspNetUser\\Progress.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T13:33:39.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ShowProgress.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\User\\ShowProgress.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\User\\ShowProgress.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\User\\ShowProgress.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\User\\ShowProgress.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T01:38:16.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T15:43:22.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateNew.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\CreateNew.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\AspNetUser\\CreateNew.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\CreateNew.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\AspNetUser\\CreateNew.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T18:12:20.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminstradorController.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\AdminstradorController.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\AdminstradorController.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\AdminstradorController.cs",
+              "RelativeToolTip": "WebNutricion\\Controllers\\AdminstradorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:58:50.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T15:59:27.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T15:42:21.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\User\\Index.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwDIAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T15:40:55.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T15:42:18.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Create.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Create.cshtml",
+              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Create.cshtml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\AspNetUser\\Create.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAJsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T18:47:27.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AspNetUserController.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\AspNetUserController.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\AspNetUserController.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\AspNetUserController.cs",
+              "RelativeToolTip": "WebNutricion\\Controllers\\AspNetUserController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAkwBIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T01:39:54.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GestionController.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\GestionController.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\GestionController.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\GestionController.cs",
+              "RelativeToolTip": "WebNutricion\\Controllers\\GestionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T09:00:13.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Web.config",
+              "RelativeDocumentMoniker": "WebNutricion\\Web.config",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Web.config",
+              "RelativeToolTip": "WebNutricion\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-22T16:42:04.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CreateNew.cshtml",
+              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Gestion\\CreateNew.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Gestion\\CreateNew.cshtml",
+              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Gestion\\CreateNew.cshtml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\Gestion\\CreateNew.cshtml",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAuwJMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T18:09:39.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Manage\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\Manage\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\Manage\\Index.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\Manage\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T01:42:41.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ManageController.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\ManageController.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\ManageController.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\ManageController.cs",
+              "RelativeToolTip": "WebNutricion\\Controllers\\ManageController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAD4v08AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T01:42:27.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AspNetUser.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\AspNetUser.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Models\\AspNetUser.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\AspNetUser.cs",
+              "RelativeToolTip": "WebNutricion\\Models\\AspNetUser.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAA1wEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T03:30:03.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ManageViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\ManageViewModels.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Models\\ManageViewModels.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\ManageViewModels.cs",
+              "RelativeToolTip": "WebNutricion\\Models\\ManageViewModels.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T14:23:00.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebNutricion\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T15:26:54.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "planificacionNutricionalController.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\planificacionNutricionalController.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\planificacionNutricionalController.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\planificacionNutricionalController.cs",
+              "RelativeToolTip": "WebNutricion\\Controllers\\planificacionNutricionalController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T19:04:56.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "GestionModel.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\GestionModel.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Models\\GestionModel.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\GestionModel.cs",
+              "RelativeToolTip": "WebNutricion\\Models\\GestionModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAD4vw8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T08:55:13.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "planAlimentacion.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\planAlimentacion.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Models\\planAlimentacion.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\planAlimentacion.cs",
+              "RelativeToolTip": "WebNutricion\\Models\\planAlimentacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T08:56:15.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WebNutricion\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAKcAAAAAAAAAAAAUwAoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T08:59:32.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "planificacionNutricional.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\planificacionNutricional.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Models\\planificacionNutricional.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\planificacionNutricional.cs",
+              "RelativeToolTip": "WebNutricion\\Models\\planificacionNutricional.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAhwBAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T08:36:30.868Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "planAlimentacionController.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\planAlimentacionController.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\planAlimentacionController.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\planAlimentacionController.cs",
-              "RelativeToolTip": "WebNutricion\\Controllers\\planAlimentacionController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAswDIAAAB6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T19:03:48.046Z",
-              "EditorCaption": ""
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\planAlimentacion\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\planAlimentacion\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\planAlimentacion\\Create.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\planAlimentacion\\Create.cshtml",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAgwFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T09:09:27.874Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebNutricion\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "planAlimentacionController.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\planAlimentacionController.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\planAlimentacionController.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\planAlimentacionController.cs",
+              "RelativeToolTip": "WebNutricion\\Controllers\\planAlimentacionController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAswDIAAAB6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T03:06:46.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T19:03:48.046Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 33,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\planificacionNutricional\\Create.cshtml",
-              "RelativeDocumentMoniker": "WebNutricion\\Views\\planificacionNutricional\\Create.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\planificacionNutricional\\Create.cshtml",
-              "RelativeToolTip": "WebNutricion\\Views\\planificacionNutricional\\Create.cshtml",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAAAIMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-11T09:09:39.632Z",
-              "EditorCaption": ""
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebNutricion\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T03:06:46.436Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "WebNutricion\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "WebNutricion\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T01:06:52.076Z",
-              "EditorCaption": ""
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\planificacionNutricional\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebNutricion\\Views\\planificacionNutricional\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\planificacionNutricional\\Create.cshtml",
+              "RelativeToolTip": "WebNutricion\\Views\\planificacionNutricional\\Create.cshtml",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAIMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T09:09:39.632Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
               "Title": "valoresNutricionaleController.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\valoresNutricionaleController.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\valoresNutricionaleController.cs",
               "RelativeDocumentMoniker": "WebNutricion\\Controllers\\valoresNutricionaleController.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Controllers\\valoresNutricionaleController.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Controllers\\valoresNutricionaleController.cs",
               "RelativeToolTip": "WebNutricion\\Controllers\\valoresNutricionaleController.cs",
               "ViewState": "AQIAADAAAAAAAAAAAAAgwDgAAACDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T19:05:13.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T19:05:13.719Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 36,
               "Title": "valoresNutricionale.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\valoresNutricionale.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\valoresNutricionale.cs",
               "RelativeDocumentMoniker": "WebNutricion\\Models\\valoresNutricionale.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\valoresNutricionale.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\valoresNutricionale.cs",
               "RelativeToolTip": "WebNutricion\\Models\\valoresNutricionale.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAuwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T08:56:57.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T08:56:57.049Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 37,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\valoresNutricionale\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\valoresNutricionale\\Create.cshtml",
               "RelativeDocumentMoniker": "WebNutricion\\Views\\valoresNutricionale\\Create.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\valoresNutricionale\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\valoresNutricionale\\Create.cshtml",
               "RelativeToolTip": "WebNutricion\\Views\\valoresNutricionale\\Create.cshtml",
               "ViewState": "AQIAAC0AAAAAAAAAAAAIwD8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -686,79 +738,99 @@
               "$type": "Document",
               "DocumentIndex": 38,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\valoresNutricionale\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\valoresNutricionale\\Index.cshtml",
               "RelativeDocumentMoniker": "WebNutricion\\Views\\valoresNutricionale\\Index.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\valoresNutricionale\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\valoresNutricionale\\Index.cshtml",
               "RelativeToolTip": "WebNutricion\\Views\\valoresNutricionale\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T18:47:33.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T18:47:33.216Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 39,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\planificacionNutricional\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\planificacionNutricional\\Index.cshtml",
               "RelativeDocumentMoniker": "WebNutricion\\Views\\planificacionNutricional\\Index.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\planificacionNutricional\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\planificacionNutricional\\Index.cshtml",
               "RelativeToolTip": "WebNutricion\\Views\\planificacionNutricional\\Index.cshtml",
               "ViewState": "AQIAAFEAAAAAAAAAAAAAAFoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T18:15:04.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T18:15:04.116Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 40,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\planificacionNutricional\\Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\planificacionNutricional\\Edit.cshtml",
               "RelativeDocumentMoniker": "WebNutricion\\Views\\planificacionNutricional\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Views\\planificacionNutricional\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Views\\planificacionNutricional\\Edit.cshtml",
               "RelativeToolTip": "WebNutricion\\Views\\planificacionNutricional\\Edit.cshtml",
               "ViewState": "AQIAAGYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T18:15:10.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T18:15:10.163Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 41,
               "Title": "Nutricion.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\Nutricion.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\Nutricion.cs",
               "RelativeDocumentMoniker": "WebNutricion\\Models\\Nutricion.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\Nutricion.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\Nutricion.cs",
               "RelativeToolTip": "WebNutricion\\Models\\Nutricion.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAqwBAAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T01:34:41.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T01:34:41.527Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 42,
               "Title": "IdentityModels.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\IdentityModels.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\IdentityModels.cs",
               "RelativeDocumentMoniker": "WebNutricion\\Models\\IdentityModels.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\IdentityModels.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\IdentityModels.cs",
               "RelativeToolTip": "WebNutricion\\Models\\IdentityModels.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T03:42:33.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T03:42:33.492Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 43,
               "Title": "AccountViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\AccountViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\AccountViewModels.cs",
               "RelativeDocumentMoniker": "WebNutricion\\Models\\AccountViewModels.cs",
-              "ToolTip": "C:\\Users\\saulp\\Downloads\\NuevoTry\\NuevoTry\\REGISTERTEST\\SistemaNutricional-main\\WebNutricion\\WebNutricion\\Models\\AccountViewModels.cs",
+              "ToolTip": "C:\\Users\\Saul\\OneDrive\\Escritorio\\SistemaNutricional\\WebNutricion\\WebNutricion\\Models\\AccountViewModels.cs",
               "RelativeToolTip": "WebNutricion\\Models\\AccountViewModels.cs",
               "ViewState": "AQIAAEgAAAAAAAAAAAApwEUAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T08:59:30.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T08:59:30.266Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 218,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

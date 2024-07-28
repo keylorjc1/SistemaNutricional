@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WebNutricion.Models.planAlimentacion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AspNetUser.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.desayuno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.almuerzo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.merienda)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cena)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.calorias)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cedula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AspNetUser.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.desayuno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.almuerzo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.merienda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cena)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.calorias)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cedula)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idPlan }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idPlan }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idPlan })
+        </td>
+    </tr>
+}
+
+</table>

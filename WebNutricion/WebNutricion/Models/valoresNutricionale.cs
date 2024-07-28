@@ -11,16 +11,20 @@ namespace WebNutricion.Models
         [Key]
         public int idValores { get; set; }
 
-        [StringLength(300)]
+        [Required(ErrorMessage = "El motivo es obligatorio.")]
+        [StringLength(300, ErrorMessage = "El motivo no puede tener más de 300 caracteres.")]
         public string motivo { get; set; }
 
-        [StringLength(300)]
+        [Required(ErrorMessage = "Las expectativas son obligatorias.")]
+        [StringLength(300, ErrorMessage = "Las expectativas no pueden tener más de 300 caracteres.")]
         public string expectativas { get; set; }
 
-        [StringLength(300)]
+        [Required(ErrorMessage = "La información de consulta es obligatoria.")]
+        [StringLength(300, ErrorMessage = "La información de consulta no puede tener más de 300 caracteres.")]
         public string informacionConsulta { get; set; }
 
-        [StringLength(300)]
+        [Required(ErrorMessage = "El historial es obligatorio.")]
+        [StringLength(300, ErrorMessage = "El historial no puede tener más de 300 caracteres.")]
         public string historial { get; set; }
 
         [StringLength(9)]

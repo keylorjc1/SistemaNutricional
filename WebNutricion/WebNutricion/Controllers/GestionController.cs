@@ -7,9 +7,11 @@ using WebNutricion.Models;
 
 namespace WebNutricion.Controllers
 {
+    [Authorize(Roles = "Administrador")] // Se aplica a todas las acciones del controlador
+
     public class GestionController : Controller
     {
-        private Nutricion db = new Nutricion();
+        private NutricionModel db = new NutricionModel();
 
         // GET: Gestion/Index
         public ActionResult Index()

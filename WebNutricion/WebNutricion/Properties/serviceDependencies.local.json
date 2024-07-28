@@ -7,12 +7,12 @@
     "secrets1": {
       "type": "secrets.user"
     },
-    "mssql2": {
-      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/eastus/connectors/ConnectionStringsManu_7D2421FAAE",
+    "mssql3": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/eastus/connectors/NutriWEB_36FCFC60D1",
       "secretStore": "LocalSecretsFile",
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/sistemawebnutricionalserver/databases/SistemaWebNutricional_",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/sistemawebnutricionalserver/databases/SistemaWebNutricional_",
       "type": "mssql.azure",
-      "connectionId": "ConnectionStrings:Manu"
+      "connectionId": "NutriWEB"
     }
   }
 }

@@ -1,0 +1,39 @@
+﻿@using Microsoft.AspNet.Identity
+@using System.Security.Claims;
+
+
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+<ul class="navbar-nav navbar-right">
+    <li>
+        @Html.ActionLink("Hola " + User.Identity.GetUserName() + "!", "Index", "User", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
+    </li>
+    @if (User.Identity.IsAuthenticated)
+    {
+        var claimsIdentity = User.Identity as System.Security.Claims.ClaimsIdentity;
+        var roleOfUser = claimsIdentity != null ? claimsIdentity.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role).Value : "User";
+
+        if (roleOfUser == "Admin")
+        {
+            <li>@Html.ActionLink("Panel de Administrador", "Index", "Adminstrador", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "nav-link" })</li>
+
+        }
+    }
+    <li><a class="nav-link" href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a></li>
+</ul>
+    }
+}
+else
+{
+
+
+<ul class="navbar-nav navbar-right">
+    <li>@Html.ActionLink("Iniciar sesión", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "nav-link" })</li>
+
+</ul>
+}
+

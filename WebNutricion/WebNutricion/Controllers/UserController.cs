@@ -13,9 +13,11 @@ using System.IO;
 
 namespace WebNutricion.Controllers
 {
+    [Authorize(Roles = "Administrador,Usuario")] // Se aplica a todas las acciones del controlador
+
     public class UserController : Controller
     {
-        private Nutricion db = new Nutricion();
+        private NutricionModel db = new NutricionModel();
 
         // GET: AspNetUser
         public ActionResult Index()

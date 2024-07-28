@@ -1,0 +1,122 @@
+﻿@model WebNutricion.Models.planificacionNutricional
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>planificacionNutricional</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AspNetUser.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AspNetUser.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.peso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.peso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.altura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.altura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IMC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IMC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.grasacorporal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grasacorporal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.metabolismobasal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.metabolismobasal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.caloriasdiarias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.caloriasdiarias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.proteinas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.proteinas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.carbohidratos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.carbohidratos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.grasas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grasas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.objetivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.objetivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idPlanificacionNutricional }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

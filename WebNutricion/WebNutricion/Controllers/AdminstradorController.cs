@@ -6,6 +6,8 @@ using System.Web.Mvc;
 
 namespace WebNutricion.Controllers
 {
+    [Authorize(Roles = "Administrador")] // Se aplica a todas las acciones del controlador
+
     public class AdminstradorController : Controller
     {
         // GET: Adminstrador

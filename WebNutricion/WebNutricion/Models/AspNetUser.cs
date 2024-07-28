@@ -1,6 +1,5 @@
 namespace WebNutricion.Models
 {
-    using Microsoft.AspNet.Identity;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -61,5 +60,4 @@ namespace WebNutricion.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<valoresNutricionale> valoresNutricionales { get; set; }
     }
-  
 }

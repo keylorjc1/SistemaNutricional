@@ -10,9 +10,11 @@ using WebNutricion.Models;
 
 namespace WebNutricion.Controllers
 {
+    [Authorize(Roles = "Administrador")]
+
     public class AspNetUserController : Controller
     {
-        private Nutricion db = new Nutricion();
+        private NutricionModel db = new NutricionModel();
 
 
         // GET: AspNetUser

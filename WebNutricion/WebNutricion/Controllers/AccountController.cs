@@ -67,7 +67,6 @@ namespace WebNutricion.Controllers
             }
         }
 
-        //
         // GET: /Account/Login
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
@@ -76,7 +75,6 @@ namespace WebNutricion.Controllers
             return View();
         }
 
-        //
         // POST: /Account/Login
         [HttpPost]
         [AllowAnonymous]
@@ -94,6 +92,11 @@ namespace WebNutricion.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
+                    // Si el returnUrl es vacío o es la URL de inicio de sesión, lo cambias a otra pantalla
+                    if (string.IsNullOrEmpty(returnUrl) || returnUrl == Url.Action("Index", "Home"))
+                    {
+                        returnUrl = Url.Action("Index", "Home"); // Cambia 'OtraPantalla' y 'OtroControlador' por los valores deseados
+                    }
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
@@ -101,10 +104,12 @@ namespace WebNutricion.Controllers
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Intento de inicio de sesión no válido.");
+                    // Agrega un mensaje de error al modelo si el inicio de sesión falla
+                    ModelState.AddModelError("", "El correo electrónico o la contraseña son incorrectos.");
                     return View(model);
             }
         }
+
 
         //
         // GET: /Account/VerifyCode
@@ -150,29 +155,60 @@ namespace WebNutricion.Controllers
         }
 
         //
-        // GET: /Account/Register
+        //GET: /Account/Register
         // [AllowAnonymous]
 
         //[Authorize(Roles = "Admin")]
-        [AllowAnonymous]
+        [Authorize(Roles = "Administrador")]
 
         public ActionResult Register()
         {
             List<Role> rolesBD = RoleManager.Roles.ToList();
 
+            // Si no hay roles, crear roles predeterminados
             if (rolesBD.Count == 0)
             {
-                Role admin = new Role() { Id = Guid.NewGuid().ToString(), Name = "Admin", Descripcion = "Role de super usuario", Activo = true };
-                Role user = new Role() { Id = Guid.NewGuid().ToString(), Name = "User", Descripcion = "Role de usuario general", Activo = true };
+                Role admin = new Role()
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = "Administrador",
+                    Descripcion = "Rol de super usuario",
+                    Activo = true
+                };
+                Role usuario = new Role()
+                {
+                    Id = Guid.NewGuid().ToString(),
+                    Name = "Usuario",
+                    Descripcion = "Rol de usuario general",
+                    Activo = true
+                };
                 RoleManager.Create(admin);
-                RoleManager.Create(user);
-                rolesBD = RoleManager.Roles.ToList();
+                RoleManager.Create(usuario);
+            }
+            else
+            {
+                // Si los roles existen, asegurarse de que tienen los nombres correctos
+                foreach (var role in rolesBD)
+                {
+                    if (role.Name == "Admin")
+                    {
+                        role.Name = "Administrador";
+                        RoleManager.Update(role);
+                    }
+                    else if (role.Name == "User")
+                    {
+                        role.Name = "Usuario";
+                        RoleManager.Update(role);
+                    }
+                }
             }
 
+            rolesBD = RoleManager.Roles.ToList();
             ViewBag.Roles = rolesBD;
 
             return View();
         }
+
 
         //
         // POST: /Account/Register
@@ -183,6 +219,7 @@ namespace WebNutricion.Controllers
         {
             if (ModelState.IsValid)
             {
+
                 var user = new ApplicationUser
                 {
                     UserName = model.Email,
@@ -197,7 +234,6 @@ namespace WebNutricion.Controllers
                     RoleManager.Roles.Where(r => r.Id == model.Rol).FirstOrDefault().Name);
                 if (result.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
 
                     // Obtener el ID del usuario recién registrado
                     var userId = user.Id;

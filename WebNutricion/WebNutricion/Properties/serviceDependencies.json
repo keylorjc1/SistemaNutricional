@@ -9,7 +9,11 @@
     },
     "mssql2": {
       "type": "mssql",
-      "connectionId": "ConnectionStrings:Manu"
+      "connectionId": "MS"
+    },
+    "mssql3": {
+      "type": "mssql",
+      "connectionId": "NutriWEB"
     }
   }
 }
